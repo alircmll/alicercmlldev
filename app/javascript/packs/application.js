@@ -1,81 +1,105 @@
 import "bootstrap";
 
-$(document).ready(function(){
+class StickyNavigation {
 
-  // Scrollspy initiation
-  $('body').scrollspy({
-    target: '#scroll-spy',
-    offset: 70
-  });
-
-  // On render, adjust body padding to ensure last Scroll target can reach top of screen
-  var height = $('#howto').innerHeight();
-  var windowHeight = $(window).height();
-  var navHeight = $('nav.navbar').innerHeight();
-  var siblingHeight = $('#howto').nextAll().innerHeight();
-
-
-  if(height < windowHeight){
-    $('body').css("padding-bottom", windowHeight-navHeight-height-siblingHeight + "px");
+  constructor() {
+    this.currentId = null;
+    this.currentTab = null;
+    this.tabContainerHeight = 70;
+    let self = this;
+    $('.et-hero-tab').click(function() {
+      self.onTabClick(event, $(this));
+    });
+    $(window).scroll(() => { this.onScroll(); });
+    $(window).resize(() => { this.onResize(); });
   }
 
-  // On window resize, adjust body padding to ensure last Scroll target can reach top of screen
-  $(window).resize(function(event){
-    var height = $('#howto').innerHeight();
-    var windowHeight = $(window).height();
-    var navHeight = $('nav.navbar').innerHeight();
-    var siblingHeight = $('#howto').nextAll().innerHeight();
+  onTabClick(event, element) {
+    event.preventDefault();
+    let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+    $('html, body').animate({ scrollTop: scrollTop }, 600);
+  }
 
+  onScroll() {
+    this.checkTabContainerPosition();
+    this.findCurrentTabSelector();
+  }
 
-    if(height < windowHeight){
-      $('body').css("padding-bottom", windowHeight-navHeight-height-siblingHeight + "px");
+  onResize() {
+    if(this.currentId) {
+      this.setSliderCss();
     }
+  }
+
+  checkTabContainerPosition() {
+    let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
+    if($(window).scrollTop() > offset) {
+      $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
+    }
+    else {
+      $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
+    }
+  }
+
+  findCurrentTabSelector(element) {
+    let newCurrentId;
+    let newCurrentTab;
+    let self = this;
+    $('.et-hero-tab').each(function() {
+      let id = $(this).attr('href');
+      let offsetTop = $(id).offset().top - self.tabContainerHeight;
+      let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+      if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+        newCurrentId = id;
+        newCurrentTab = $(this);
+      }
+    });
+    if(this.currentId != newCurrentId || this.currentId === null) {
+      this.currentId = newCurrentId;
+      this.currentTab = newCurrentTab;
+      this.setSliderCss();
+    }
+  }
+
+  setSliderCss() {
+    let width = 0;
+    let left = 0;
+    if(this.currentTab) {
+      width = this.currentTab.css('width');
+      left = this.currentTab.offset().left;
+    }
+    $('.et-hero-tab-slider').css('width', width);
+    $('.et-hero-tab-slider').css('left', left);
+  }
+
+}
+
+new StickyNavigation();
+
+// stats section
+
+
+$('.counting').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 3000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
   });
 
-  $('nav.navbar a, .scrollTop').click(function(event){
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash (#)
-      var hash = this.hash;
-
-      // Ensure no section has relevant class
-      $('section').removeClass("focus");
-
-      // Add class to target
-      $(hash).addClass("focus");
-
-      // Remove thy class after timeout
-      setTimeout(function(){
-        $(hash).removeClass("focus");
-      }, 2000);
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 69
-      }, 600, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-
-      // Collapse Navbar for mobile view
-      $(".navbar-collapse").collapse('hide');
-    }
-
-  });
-  $(window).scroll(function(){
-    var scrollPos = $('body').scrollTop();
-    if(scrollPos > 0){
-      $('.navbar').addClass('show-color');
-      $('.scrollTop').addClass('show-button');
-    } else{
-      $('.navbar').removeClass('show-color');
-      $('.scrollTop').removeClass('show-button');
-    }
-
-  });
 });
