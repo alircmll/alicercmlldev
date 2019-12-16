@@ -65,7 +65,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.default_url_options = { :host => 'alicercmll.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'alicercmll.dev' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
@@ -73,7 +73,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'alicercmll.herokuapp.com',
+    domain:               'alicercmll.dev',
     user_name:            ENV["GMAIL_EMAIL"],
     password:             ENV["GMAIL_PASSWORD"],
     authentication:       'plain',
