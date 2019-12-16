@@ -136,8 +136,59 @@
     <section class="et-slide" id="tab-other">
       <h1>Contact</h1>
       <h3>something about me</h3>
-      <div id="contact">
-        <%= render"home/contact_form" %>
-      </div>
-    </section>
-  </main>
+       <!--  <section class="contact-wrap">
+      <form action="https://formspree.io/xwkveaqe" method="POST" class="contact-form">
+        <div class="col-sm-6">
+          <div class="input-block">
+            <label>First Name</label>
+            <input type="text" name="first_name" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="input-block">
+            <label>Last Name</label>
+            <input type="text" name="last_name" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="input-block">
+            <label>Your email</label>
+            <input type="text" name="_replyto" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="input-block">
+            <label for="">Message Subject</label>
+            <input type="text" name="object" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="input-block textarea">
+            <label for="">Drop your message here</label>
+            <textarea rows="3" type="text" name="message" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="col-sm-12">
+           <button class="submit" type="submit">Send</button> -->
+            <%#= render"shared/btn" %>
+          <!-- <div class="frame">
+            <input type="submit" id="send"/>
+            <label for="send" class="btn-send">SEND MAIL</label>
+            <div class="ring"></div>
+            <div class="circle"></div>
+            <svg class="mail">
+              <polyline points="119,1 119,69 1,69 1,1"></polyline>
+              <polyline points="119,1 60,45 1,1 119,1"></polyline>
+            </svg>
+            <svg class="plane">
+              <polyline points="119,1 1,59 106,80 119,1"></polyline>
+              <polyline points="119,1 40,67 43,105 69,73"></polyline>
+            </svg>
+          </div>
+        </div>
+      </form>
+    </section> -->
+
+    <%= render"shared/formcontact" %>
+  </section>
+</main>

@@ -1,0 +1,41 @@
+input[type=submit]{
+  margin-left: 0.5em;
+  height: 2.5em;
+  padding: 0.2em 1em 0.2em 2.25em;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: #696666;
+  background: url(https://i.imgur.com/Th606mh.png) no-repeat scroll 0.5em -0.3em transparent;
+  background-size: 27px 102px;
+  border-radius: 2em;
+  border: 0.15em solid #008080;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  box-shadow: none;
+}
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #008080;
+    border-color: #008080;
+    background-position: 0.45em bottom;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:focus {
+    background-position: 2em -4em;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+/* Webfonts */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
