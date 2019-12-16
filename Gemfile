@@ -7,7 +7,6 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.2.3'
 gem 'redis'
-gem 'mail_form'
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 
 gem 'autoprefixer-rails'
