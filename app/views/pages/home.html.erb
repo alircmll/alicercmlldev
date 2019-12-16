@@ -2,19 +2,19 @@
   <section class="et-hero-tabs">
     <h1>AliceRcmll</h1>
     <h3>FullStack Web Developper</h3>
-    <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">Profil</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Parcours</a>
-      <a class="et-hero-tab" href="#tab-react">Compétences</a>
-      <a class="et-hero-tab" href="#tab-angular">Services</a>
-      <a class="et-hero-tab" href="#tab-other">Contact</a>
-      <span class="et-hero-tab-slider"></span>
-    </div>
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-es6">Profil</a>
+        <a class="et-hero-tab" href="#tab-flexbox">Parcours</a>
+        <a class="et-hero-tab" href="#tab-react">Skills</a>
+<!--         <a class="et-hero-tab" href="#tab-angular">Services</a> -->
+        <a class="et-hero-tab" href="#tab-other">Contact</a>
+        <span class="et-hero-tab-slider"></span>
+      </div>
   </section>
 
   <!-- Main -->
   <main class="et-main">
-    <section class="et-slide" id="tab-es6" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+    <section class="et-slide" id="tab-es6" id= "section-profil" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
         <div class="profil-title">
           <h1>Profil</h1>
       </div>
@@ -65,39 +65,74 @@
         </li>
         <li>
           <div>
-            <time>February-April 2019</time><br> English teacher in an elementary school.
+            <time>February-April 2019</time><br> English teacher in an elementary school
           </div>
         </li>
         <li>
           <div>
-            <time>2018</time><br>Freelance Community manager.
+            <time>2017 - 2018</time><br>Freelance Community manager - Audiovisual production assistant
           </div>
         </li>
         <li>
           <div>
-            <time>2017</time><br>Audiovisual production assistant.
+            <time>2015-2016</time><br>Preparatory med-school
           </div>
         </li>
         <li>
           <div>
-            <time></time><br>Been for a couples of months in Amsterdam to internship in a cool start-up company!
+            <time>2014</time><br>Scientific Baccalaureate degree - Physics Chemistry
           </div>
         </li>
         <li>
           <div>
-            <time>Find me!</time><h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria</a> | <a href="https://codepen.io/EleftheriaBatsou" target="_blank">Projects</a> | <a href="https://www.youtube.com/channel/UCC-WwYv3DEW7Nkm_IP6VeQQ" target="_blank"> Coding videos </a></h5>
+            <time>Find me!</time><h5> <a href="https://github.com/alircmll" class="fab fa-github"></a> | <a href="https://www.linkedin.com/in/alice-roy-camille-a4236b199/" class="fab fa-linkedin"></a></h5>
           </div>
         </li>
       </ul>
     </section>
+
     <section class="et-slide" id="tab-react">
-      <h1>Compétences</h1>
+      <h1>Skills</h1>
       <h3>something about me</h3>
+
+      <div id="skills" class="container-fluid amg-skills">
+        <div class="row amg-badge-collection">
+          <div class="col-xs-3 amg-badge">
+            <%= image_tag('html5.svg') %>
+            <h3 class="title">HTML5</h3>
+          </div>
+          <div class="col-xs-3 amg-badge">
+           <%= image_tag('js.png') %>
+           <h3 class="title">JavaScript</h3>
+          </div>
+          <div class="col-xs-3 amg-badge">
+            <%= image_tag('css-3.svg') %>
+            <h3 class="title">CSS3</h3>
+          </div>
+          <div class="col-xs-3 amg-badge">
+           <%#= image_tag('css-3.svg') %>
+            <img src="https://seeklogo.com/images/R/ruby-on-rails-logo-95951CC5FB-seeklogo.com.png" alt="rails">
+            <h3 class="title">Ruby on Rails</h3>
+          </div>
+           <div class="col-xs-3 amg-badge">
+           <%= image_tag('github.svg') %>
+           <h3 class="title">Github</h3>
+          </div>
+          <div class="col-xs-3 amg-badge">
+           <%= image_tag('Postgresql.svg') %>
+           <h3 class="title">Postgresql</h3>
+          </div>
+          <div class="col-xs-3 amg-badge">
+           <%= image_tag('photoshop.png') %>
+           <h3 class="title">Photoshop</h3>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="et-slide" id="tab-angular">
+    <!-- <section class="et-slide" id="tab-angular">
       <h1>Services</h1>
       <h3>something about me</h3>
-    </section>
+    </section> -->
     <section class="et-slide" id="tab-other">
       <h1>Contact</h1>
       <h3>something about me</h3>
