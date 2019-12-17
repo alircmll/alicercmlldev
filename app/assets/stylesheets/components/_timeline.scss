@@ -7,7 +7,7 @@
 }
 
 $BG-color: #AD1457; /* dark pink for the bg-color */
-$box-color: #C7D9ED; /*dark cayn for the boxes */
+$box-color: #9ec0c0; /*dark cayn for the boxes */
 $font-color: #485B61; /* light pink  for the words*/
 
 // body {
@@ -62,7 +62,7 @@ $font-color: #485B61; /* light pink  for the words*/
   content: '';
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: -0.9px;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
@@ -76,6 +76,8 @@ $font-color: #485B61; /* light pink  for the words*/
   width: 400px;
   padding: 15px;
   background: $box-color;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .timeline ul li div::before {
@@ -85,6 +87,7 @@ $font-color: #485B61; /* light pink  for the words*/
   width: 0;
   height: 0;
   border-style: solid;
+
 }
 
 .timeline ul li:nth-child(odd) div {
