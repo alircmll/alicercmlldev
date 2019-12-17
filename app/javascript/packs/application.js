@@ -258,3 +258,8 @@ $('.contact-form').find('.form-control').blur(function() {
     };
     xhr.send(data);
   }
+
+// progress
+(function($){
+        new WOW().init();
+    })(jQuery);

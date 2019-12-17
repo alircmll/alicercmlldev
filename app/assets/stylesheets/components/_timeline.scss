@@ -7,7 +7,7 @@
 }
 
 $BG-color: #AD1457; /* dark pink for the bg-color */
-$box-color: #9ec0c0; /*dark cayn for the boxes */
+$box-color: #DBE8E8; /*dark cayn for the boxes */
 $font-color: #485B61; /* light pink  for the words*/
 
 // body {
@@ -41,9 +41,23 @@ $font-color: #485B61; /* light pink  for the words*/
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 // .timeline{
-//   margin-top: 92vh;
+//   margin-top: 0vh;
 //   // height: auto;
 // }
+
+.arrow{
+  font-size: 4em;
+  margin-top: 10vh;
+  // display: flex;
+  // align-items: end;
+}
+
+// .container-about{
+//     display: flex;
+//   align-items: end;
+//   // justify-content:end;
+// }
+
 .timeline ul {
   // background: $BG-color;
   padding: 0px 0;
@@ -114,7 +128,7 @@ time {
   // display: block;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 
 
@@ -149,6 +163,27 @@ time {
   opacity: 1;
 }
 
+.timeline a {
+  color: #867E97;
+  text-decoration: none;
+  font-size: 2.4em;
+}
+
+.timeline a:hover {
+   color: $primary;
+   transition: all 0.3s ease 0s;
+}
+.find-me {
+  display:flex;
+  justify-content: space-around;
+  padding-top: 12px;
+  margin-top: 11px;
+}
+
+//  span{
+//   padding-top: 12px;
+//   margin-top: 11px;
+// }
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -180,18 +215,3 @@ time {
   }
 }
 
-
-/////////////////////////
-// my photo in the snow
-///////////////////////
-#meBaby{
-  width: 100px;
-  height: 135px;
-}
-
-.photos{
-  width: 100px;
-  height: auto;
-}
-a:visited { color: $font-color;}
-a:hover { color: #AD1457;}

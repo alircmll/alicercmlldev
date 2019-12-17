@@ -4,7 +4,7 @@
     <h3>FullStack Web Developper</h3>
       <div class="et-hero-tabs-container">
         <a class="et-hero-tab" href="#tab-es6">Profil</a>
-        <a class="et-hero-tab" href="#tab-flexbox">Parcours</a>
+        <a class="et-hero-tab" href="#tab-flexbox">About Me</a>
         <a class="et-hero-tab" href="#tab-react">Skills</a>
 <!--         <a class="et-hero-tab" href="#tab-angular">Services</a> -->
         <a class="et-hero-tab" href="#tab-other">Contact</a>
@@ -50,42 +50,44 @@
     </section>
 
     <section class="et-slide" id="tab-flexbox">
-        <div class="container">
-          <h1>Parcours</h1>
-<!--           <h3>something about me</h3>
- -->          <h5>&darr;</h5>
+        <div class="container-about">
+          <h1>About Me</h1>
+          <!-- <div class="arrow"> -->
+           <h5 class="arrow">&darr;</h5>
+          <!-- </div> -->
         </div>
+        <!--  <h3>something about me</h3>-->
     </section>
      <section class="timeline">
       <ul>
         <li>
           <div>
-            <time>2019</time><br> Le Wagon batch #325
+            <time>2019</time><br><span>Le Wagon batch #325</span>
           </div>
         </li>
         <li>
           <div>
-            <time>February-April 2019</time><br> English teacher in an elementary school
+            <time>February-April 2019</time><br><span>English teacher in an elementary school</span>
           </div>
         </li>
         <li>
           <div>
-            <time>2017 - 2018</time><br>Freelance Community manager - Audiovisual production assistant
+            <time>2017 - 2018</time><br><span>Freelance Community manager - Audiovisual production assistant</span>
           </div>
         </li>
         <li>
           <div>
-            <time>2015-2016</time><br>Preparatory med-school
+            <time>2015-2016</time><br><span>Preparatory med-school</span>
           </div>
         </li>
         <li>
           <div>
-            <time>2014</time><br>Scientific Baccalaureate degree - Physics Chemistry
+            <time>2014</time><br><span>Scientific Baccalaureate degree - Physics Chemistry</span>
           </div>
         </li>
         <li>
           <div>
-            <time>Find me!</time><h5> <a href="https://github.com/alircmll" class="fab fa-github"></a> | <a href="https://www.linkedin.com/in/alice-roy-camille-a4236b199/" class="fab fa-linkedin"></a></h5>
+            <time>Find me!</time><h5 class="find-me"> <a href="https://github.com/alircmll" class="fab fa-github"></a>  <a href="https://www.linkedin.com/in/alice-roy-camille-a4236b199/" class="fab fa-linkedin"></a></h5>
           </div>
         </li>
       </ul>
@@ -128,6 +130,44 @@
           </div>
         </div>
       </div>
+      <div class="wrapper">
+      <div class="skill">
+            <p>French</p>
+            <div class="skill-bar skill1 wow slideInLeft animated">
+                <span class="skill-count1">100%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>English</p>
+            <div class="skill-bar skill2 wow slideInLeft animated">
+                 <span class="skill-count2">95%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Spanish</p>
+            <div class="skill-bar skill3 wow slideInLeft animated">
+                <span class="skill-count3">55%</span>
+            </div>
+        </div>
+      </div>
+        <!-- <div class="skill">
+            <p>JAVASCRIP</p>
+            <div class="skill-bar skill4 wow slideInLeft animated">
+                <span class="skill-count4">65%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>PHP</p>
+            <div class="skill-bar skill5 wow slideInLeft animated">
+                <span class="skill-count5">80%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>WORDPRESS</p>
+            <div class="skill-bar skill6 wow slideInLeft animated">
+                <span class="skill-count6">90%</span>
+            </div> -->
+        </div>
     </section>
     <!-- <section class="et-slide" id="tab-angular">
       <h1>Services</h1>
@@ -192,3 +232,4 @@
     <%= render"shared/formcontact" %>
   </section>
 </main>
+<%= render"shared/footer" %>
