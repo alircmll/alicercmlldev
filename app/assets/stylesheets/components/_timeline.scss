@@ -52,11 +52,9 @@ $font-color: #485B61; /* light pink  for the words*/
   // align-items: end;
 }
 
-// .container-about{
-//     display: flex;
-//   align-items: end;
-//   // justify-content:end;
-// }
+.container-about{
+  padding-bottom: 5vh;
+}
 
 .timeline ul {
   // background: $BG-color;
@@ -126,9 +124,16 @@ $font-color: #485B61; /* light pink  for the words*/
 
 time {
   // display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
+  // font-size: 1.2rem;
+  // font-weight: bold;
   margin-bottom: 11px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+span{
+  font-family:'Roboto', sans-serif;
+
 }
 
 

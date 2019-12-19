@@ -4,7 +4,7 @@ input[type=submit]{
   padding: 0.2em 1em 0.2em 2.25em;
   font-size: 1.2em;
   font-weight: bold;
-  font-family: "Open Sans";
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: #696666;
   background: url(https://i.imgur.com/Th606mh.png) no-repeat scroll 0.5em -0.3em transparent;
@@ -26,16 +26,16 @@ input[type="submit"]:hover {
     transition: all 0.3s ease;
 }
 input[type="submit"]:focus {
-    background-position: 2em -4em;
+    background-position: 2em -6em;
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 /* Webfonts */
 
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
-}
+// @font-face {
+//     font-family: 'Open Sans';
+//     font-style: normal;
+//     font-weight: 700;
+//     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+// }
