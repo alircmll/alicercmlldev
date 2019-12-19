@@ -1,14 +1,14 @@
 // MODAL MENU NAVBAR +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 .navbar {
-  height: 75px;
+  height: 55px;
   padding: $pad;
   transition: all ease 500ms;
-  background-color: RGBA(8,11,7,0.75);
+  background-color: rgba(255,255,255,1);
 }
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: transparent;
+  // background: transparent;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -18,6 +18,14 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.nav-link{
+  color: rgb(145, 153, 157);
+  &:hover{
+    color:$canard;
+  }
+}
+
 
 .nav {
   list-style: none;
@@ -44,7 +52,7 @@
   background-color: $contrast; // BG DU MENU
 
   .logo {
-    font-family: "Poppins" !important;
+    // font-family: "Poppins" !important;
     letter-spacing: 10px;
   }
 
@@ -131,7 +139,7 @@
     a {
       text-transform: uppercase;
       font-size: 16px; // MENU ZISE
-      color: $primary;
+      // color: red;
       font-weight: 700;
       letter-spacing: 0em;
       transition: all 300ms ease;
@@ -139,7 +147,7 @@
       text-decoration: none;
 
       &:hover {
-        color: $secondary;
+        color: $canard;
         transition: ease 300ms;
 
         &:before {
@@ -178,7 +186,7 @@ $pix-size: 6px; // <---- Definir la taille du menu
     position: absolute;
     width: $pix-size;
     height: $pix-size;
-    background-color: $primary;
+    background-color: $canard;
     border-radius: 100%;
     transition: 0.2s ease-in-out;
 
@@ -199,7 +207,7 @@ $pix-size: 6px; // <---- Definir la taille du menu
 
   &:hover {
     .pix {
-      background-color: $primary;
+      background-color: $canard;
 
       &:nth-of-type(1) {
         transform: translate(-($pix-size), -($pix-size));
