@@ -15,7 +15,7 @@
   text-align: center;
   color: #151515;
 }
-img {
+.img {
   height:90px;
   width:85px;
 }
@@ -25,6 +25,25 @@ img {
   // font-size: 2rem;
 }
 
+@media (max-width: 768px){
+.img {
+  height:80px;
+  width:75px;
+  display:block;
+}
+.amg-badge {
+  // padding: 20px 5%;
+  padding: 10px 5%;
+}
+
+.title{
+  display: none;
+  // font-size: 2rem;
+}
+// .amg-skills{
+//   display:flex;
+// }
+}
 
 .row {
    justify-content: space-around;

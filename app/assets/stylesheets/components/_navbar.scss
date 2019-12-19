@@ -1,3 +1,4 @@
+// @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 // MODAL MENU NAVBAR +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 .navbar {
   height: 55px;
@@ -26,6 +27,10 @@
   }
 }
 
+#name{
+  font-family: "Montserrat",sans-serif;
+  font-size: 16px;
+}
 
 .nav {
   list-style: none;
@@ -298,4 +303,28 @@ $pix-size: 6px; // <---- Definir la taille du menu
       }
     }
   }
+}
+
+
+#dotsMenu {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    width: 30px;
+}
+
+@media only screen and (max-width: 766px) {
+#dotsMenu {
+    display: block;
+}
+}
+#dotsMenu .pix {
+    // width: 30px;
+    // height: 4px;
+    // margin-bottom: 6px;
+    // background: #000000;
+    display: block;
 }
