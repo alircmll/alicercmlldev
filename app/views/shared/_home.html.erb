@@ -1,37 +1,29 @@
- <!-- Hero -->
-  <section class="et-hero-tabs" id="section1" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1576473511969-6ea4136f27c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80)">
-    <h1 class="title-name">AliceRcmll</h1>
-    <h5 class="title-name">Freelance FullStack Web Develloper</h5>
+ <!-- Hero <-->
+ <%= render"shared/navbar" %>
+  <section class="et-hero-tabs" class="et-slide" id="tab-es6" id="section1" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1488921618671-463b781ac428?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80https://images.unsplash.com/photo-1488921618671-463b781ac428?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)">
+    <h1 class="title-name">Alice Rcmll</h1>
+    <h5 class="title-description">Développeur Web FullStack Freelance </h5>
     <%= render"shared/textanimation" %>
-      <div class="et-hero-tabs-container">
-        <a class="et-hero-tab" href="#tab-es6">Profil</a>
-        <a class="et-hero-tab" href="#tab-flexbox">About Me</a>
-        <a class="et-hero-tab" href="#tab-react">Skills</a>
-<!--         <a class="et-hero-tab" href="#tab-angular">Services</a> -->
-        <a class="et-hero-tab" href="#tab-other">Contact</a>
-        <span class="et-hero-tab-slider"></span>
-      </div>
   </section>
 
   <!-- Main -->
   <main class="et-main">
-    <section class="et-slide" id="tab-es6" id= "section-profil" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
-        <div class="profil-title">
+    <section class="et-slide" id="tab-flexbox" id= "section-profil" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+        <!-- <div class="profil-title">
           <h1>Profil</h1>
-      </div>
-      <!-- <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s"> -->
+      </div> -->
         <div class="container">
           <div class="row container-profil">
             <div class="col-lg-3 stats">
               <i class="fa fa-code" aria-hidden="true"></i>
               <div class="counting" data-count="40000">0</div>
-              <h5>Lines of code</h5>
+              <h5>Lignes de code</h5>
             </div>
 
             <div class="col-lg-3 stats">
               <i class="fa fa-check" aria-hidden="true"></i>
               <div class="counting" data-count="3">0</div>
-              <h5>Projects done</h5>
+              <h5>Projets</h5>
             </div>
 
             <!-- <div class="col-lg-3 stats">
@@ -43,23 +35,23 @@
             <div class="col-lg-3 stats">
               <i class="fa fa-coffee" aria-hidden="true"></i>
               <div class="counting" data-count="999">0</div>
-              <h5>Cups of coffee</h5>
+              <h5>Tasses de café</h5>
             </div>
           </div>
         </div>
     <!-- </section> -->
     </section>
 
-    <section class="et-slide" id="tab-flexbox">
-        <div class="container-about">
-          <h1>About Me</h1>
+    <!-- <section class="et-slide" id="tab-react"> -->
+     <section class="timeline" id="tab-react">
+        <div class="container-about text-center">
+          <h1>Parcours</h1>
           <!-- <div class="arrow"> -->
-           <h5 class="arrow">&darr;</h5>
+           <!-- <h5 class="arrow">&darr;</h5> -->
           <!-- </div> -->
         </div>
         <!--  <h3>something about me</h3>-->
-    </section>
-     <section class="timeline">
+    <!-- </section> -->
       <ul>
         <li>
           <div>
@@ -68,37 +60,39 @@
         </li>
         <li>
           <div>
-            <time>February-April 2019</time><br><span>English teacher in an elementary school</span>
+            <time>Février - Avril 2019</time><br><span>Professeur d'anglais à l'école élémentaire</span>
           </div>
         </li>
         <li>
           <div>
-            <time>2017 - 2018</time><br><span>Freelance Community manager - Audiovisual production assistant</span>
+            <time>2017 - 2019</time><br><span>Community manager Freelance  - Assistance de production audiovisuelle</span>
           </div>
         </li>
         <li>
           <div>
-            <time>2015-2016</time><br><span>Preparatory med-school</span>
+            <time>2015 - 2016</time><br><span>Ecole préparatoire de Médecine</span>
           </div>
         </li>
         <li>
           <div>
-            <time>2014</time><br><span>Scientific Baccalaureate degree - Physics Chemistry</span>
+            <time>2014</time><br><span>Baccalauréat Scientifique - Physique-Chimie</span>
           </div>
         </li>
         <li>
           <div>
-            <time>Find me!</time><h5 class="find-me"> <a href="https://github.com/alircmll" class="fab fa-github"></a>  <a href="https://www.linkedin.com/in/alice-roy-camille-a4236b199/" class="fab fa-linkedin"></a></h5>
+            <time>Retrouvez-moi!</time><h5 class="find-me"> <a href="https://github.com/alircmll" class="fab fa-github"></a>  <a href="https://www.linkedin.com/in/alice-roy-camille-a4236b199/" class="fab fa-linkedin"></a></h5>
           </div>
         </li>
       </ul>
     </section>
 
-    <section class="et-slide" id="tab-react">
-      <h1>Skills</h1>
       <!-- <h3>something about me</h3> -->
 
+    <section class="et-slide" id="tab-angular" >
       <div id="skills" class="container-fluid amg-skills">
+        <div id="title-skills">
+          <h1>Compétences</h1>
+        </div>
         <div class="row amg-badge-collection">
           <div class="col-xs-3 amg-badge">
             <%= image_tag('html5.svg') %>
@@ -132,103 +126,29 @@
         </div>
       </div>
       <div class="wrapper">
-      <div class="skill">
-            <p>French</p>
+        <div class="skill">
+            <p>Français</p>
             <div class="skill-bar skill1 wow slideInLeft animated">
                 <span class="skill-count1">100%</span>
             </div>
         </div>
         <div class="skill">
-            <p>English</p>
+            <p>Anglais</p>
             <div class="skill-bar skill2 wow slideInLeft animated">
                  <span class="skill-count2">95%</span>
             </div>
         </div>
         <div class="skill">
-            <p>Spanish</p>
+            <p>Espagnol</p>
             <div class="skill-bar skill3 wow slideInLeft animated">
                 <span class="skill-count3">55%</span>
             </div>
         </div>
       </div>
-        <!-- <div class="skill">
-            <p>JAVASCRIP</p>
-            <div class="skill-bar skill4 wow slideInLeft animated">
-                <span class="skill-count4">65%</span>
-            </div>
-        </div>
-        <div class="skill">
-            <p>PHP</p>
-            <div class="skill-bar skill5 wow slideInLeft animated">
-                <span class="skill-count5">80%</span>
-            </div>
-        </div>
-        <div class="skill">
-            <p>WORDPRESS</p>
-            <div class="skill-bar skill6 wow slideInLeft animated">
-                <span class="skill-count6">90%</span>
-            </div> -->
-        </div>
     </section>
-    <!-- <section class="et-slide" id="tab-angular">
-      <h1>Services</h1>
-      <h3>something about me</h3>
-    </section> -->
-    <section class="et-slide" id="tab-other">
+
+    <section class="et-slide" id="tab-other" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2300&q=80)">
       <h1>Contact</h1>
-      <!-- <h3>something about me</h3> -->
-       <!--  <section class="contact-wrap">
-      <form action="https://formspree.io/xwkveaqe" method="POST" class="contact-form">
-        <div class="col-sm-6">
-          <div class="input-block">
-            <label>First Name</label>
-            <input type="text" name="first_name" class="form-control">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="input-block">
-            <label>Last Name</label>
-            <input type="text" name="last_name" class="form-control">
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="input-block">
-            <label>Your email</label>
-            <input type="text" name="_replyto" class="form-control">
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="input-block">
-            <label for="">Message Subject</label>
-            <input type="text" name="object" class="form-control">
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="input-block textarea">
-            <label for="">Drop your message here</label>
-            <textarea rows="3" type="text" name="message" class="form-control"></textarea>
-          </div>
-        </div>
-        <div class="col-sm-12">
-           <button class="submit" type="submit">Send</button> -->
-            <%#= render"shared/btn" %>
-          <!-- <div class="frame">
-            <input type="submit" id="send"/>
-            <label for="send" class="btn-send">SEND MAIL</label>
-            <div class="ring"></div>
-            <div class="circle"></div>
-            <svg class="mail">
-              <polyline points="119,1 119,69 1,69 1,1"></polyline>
-              <polyline points="119,1 60,45 1,1 119,1"></polyline>
-            </svg>
-            <svg class="plane">
-              <polyline points="119,1 1,59 106,80 119,1"></polyline>
-              <polyline points="119,1 40,67 43,105 69,73"></polyline>
-            </svg>
-          </div>
-        </div>
-      </form>
-    </section> -->
 
     <%= render"shared/formcontact" %>
   </section>

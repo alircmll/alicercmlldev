@@ -1,0 +1,80 @@
+<nav id="navMenu" class="navbar navbar-custom navbar-fixed-top navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%#= image_tag 'hunm.png' %>
+  <% end %>
+  <div class="d-flex" id="">
+    <%# LOGIN USER %>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <a class="nav-link" href="#tab-es6">Acceuil</a>
+
+            <a class="nav-link" href="#tab-flexbox">Profil</a>
+            <a class="nav-link" href="#tab-react">Parcours</a>
+            <a class="nav-link" href="#tab-angular">Compétences</a>
+            <a class="nav-link" href="#tab-other">Contact</a>
+
+
+      <!-- <li class="nav-item dropdown">
+        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a> -->
+        </div>
+
+    <%# MENU DOTS %>
+    <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
+      <div class="pix"></div>
+      <div class="pix"></div>
+      <div class="pix"></div>
+      <div class="pix"></div>
+      <div class="pix"></div>
+      <div class="pix"></div>
+      <div class="pix"></div>
+      <div class="pix"></div>
+      <div class="pix"></div>
+    </a>
+  </div>
+</nav>
+<%# NAVBAR TOP MENU END %>
+<%# MODAL MENU START %>
+<div class="modal fade" id="modalNavigation" role="dialog"  aria-hidden="true">
+  <%# BUTTON CLOSE %>
+  <a id="dotsMenuClose" class="btn menu active" data-target="#modalNavigation" data-toggle="modal" aria-label="Close" class="close" data-dismiss="modal">
+    <div class="pix"></div>
+    <div class="pix"></div>
+    <div class="pix"></div>
+    <div class="pix"></div>
+    <div class="pix"></div>
+    <div class="pix"></div>
+    <div class="pix"></div>
+    <div class="pix"></div>
+    <div class="pix"></div>
+  </a>
+  <%# MODAL %>
+  <div class="modal-dialog">
+    <div class="modal-content" role="document">
+      <ul id="menuModal" class="list-group text-center">
+        <%# LIST %>
+        <%# link_to 'text', path %>
+        <%#= link_to 'Home', root_path, class: "list-group-item menu-item" %>
+
+
+        <%# MENU PROFIL / LOG OUT START %>
+        <hr>
+        <li class="footer-menu list-inline ">
+          <div class="d-flex justify-content-center">
+            <!-- <a class="list-group-item" href="#"><i class="far fa-user fa-lg"></i></a> -->
+            <!-- <a class="list-group-item" href="#"><i class="fas fa-sign-out-alt fa-lg"></i></a> -->
+
+                <p class="list-group-item"><i class="fas fa-sign-out-alt fa-lg"></i></p>
+
+                <p class="list-group-item"><i class="far fa-user fa-lg"></i></p>
+
+          </div>
+        </li>
+        <%# MENU PROFIL / LOG OUT END %>
+      </ul>
+    </div>
+  </div>
+</div>

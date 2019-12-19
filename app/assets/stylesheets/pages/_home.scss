@@ -1,14 +1,76 @@
 body {
-    font-family: "Century Gothic", 'Lato', sans-serif;
      background: #eee;
 }
+
+h1 {
+  font-family: "Montserrat", serif, sans-serif;
+  font-size: 48px;
+}
+
+h5{
+font-family: "Montserrat", serif, sans-serif;
+font-size: 24px;
+}
+
 
 a {
   text-decoration: none;
 }
 
 
+#tab-react {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("nage.jpg");
+  // background-attachment: fixed;
+  // background-repeat :no-repeat;
+  // background-size: cover;
+  //  h1{
+  //   color: white;
+   // }
 
+}
+
+#tab-es6{
+  background-repeat :no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#tab-angular{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  // background-color: rgba(72, 91, 97, 0.03);
+  // background-attachment: fixed;
+  // height: 121vh;
+  // display: flex;
+  // justify-content: space-between;
+
+}
+
+#tab-other{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-repeat :no-repeat;
+  background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#tab-flexbox{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: 67vh;
+  // // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("codevert.jpg");
+  // background-attachment: fixed;
+  // background-repeat :no-repeat;
+  // background-size: cover;
+  // opacity: 0.7;
+  // color: white;
+  // background-color: #8d9599;
+  // background-image: linear-gradient(rgba(126,65,132,0.0),rgba(0,0,0,0));
+
+}
 
 .et-hero-tabs,
 .et-slide {
@@ -21,16 +83,6 @@ a {
     background: #eee;
     text-align: center;
     padding: 0 2em;
-    h1 {
-        font-size: 2rem;
-        margin: 0;
-        letter-spacing: 1rem;
-    }
-    h3 {
-        font-size: 1rem;
-        letter-spacing: 0.3rem;
-        opacity: 0.6;
-    }
 }
 
 .et-hero-tabs-container {
@@ -116,5 +168,9 @@ a {
 }
 
 .title-name{
+  color: #E0DFD5;
+  font-size: 64px !important;
+}
+.title-description{
   color: #E0DFD5;
 }
