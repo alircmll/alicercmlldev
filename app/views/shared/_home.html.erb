@@ -3,7 +3,9 @@
   <section class="et-hero-tabs" class="et-slide" id="tab-es6" id="section1">
     <h1 class="title-name">Alice Rcmll</h1>
     <h5 class="title-description">Développeur Web FullStack Freelance </h5>
-    <%= render"shared/textanimation" %>
+    <a href="#tab-react">
+      <div class="scroll-down"></div>
+    </a>
   </section>
 
   <!-- Main -->
@@ -91,7 +93,7 @@
     <section class="et-slide" id="tab-angular" >
       <div id="skills" class="container-fluid amg-skills">
         <!-- <div id="title-skills"> -->
-          <h1 id="title-skills" >Outils</h1>
+          <h1 id="title-skills">Outils</h1>
         <!-- </div> -->
           <div class="row">
             <div class="col-xs-6 amg-badge">
@@ -155,12 +157,28 @@
       </div> -->
     </section>
 
+
     <section class="et-slide" id="tab-other">
-      <h1>Contact</h1>
+      <h1 id="title-contact">Contact</h1>
       <h3>Envoyez-moi un message</h3>
-
-
+    <!-- <div class="info-contact">
+    <div class="row row-contact">
+      <div class="col-lg-3 location-info">
+        <%#= image_tag('placeholder.png') %>
+        <p>Bordeaux, FRANCE</p>
+      </div>
+      <div class="col-lg-3 mail-info">
+        <%#= image_tag('gmail.png') %>
+        <p>alicercmll@gmail.com</p>
+      </div>
+      <div class="col-lg-3 phone-info">
+        <%#= image_tag('iphone.png') %>
+        +33 6 42 33 15 89
+      </div>
+    </div>
+  </div> -->
     <%= render"shared/formcontact" %>
+
   </section>
 </main>
 <%= render"shared/footer" %>

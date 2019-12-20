@@ -2,6 +2,10 @@ body {
      background: #eee;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 h1 {
   font-family: "Montserrat", serif, sans-serif;
   font-size: 48px;
@@ -39,7 +43,7 @@ a {
 }
 
 #tab-angular{
-  padding-top: 10vh;
+  // padding-top: 10vh;
   padding-bottom: 10vh;
 //   // background-color: rgba(72, 91, 97, 0.03);
 //   // background-attachment: fixed;
@@ -73,6 +77,15 @@ a {
   // background-color: #8d9599;
   // background-image: linear-gradient(rgba(126,65,132,0.0),rgba(0,0,0,0));
 
+}
+
+@media (max-width: 768px){
+  #tab-flexbox{
+    height: 80vh;
+  }
+  .stats{
+    padding:5px;
+  }
 }
 
 .et-hero-tabs,
@@ -188,7 +201,9 @@ a {
 //   background-color: #191e23
 // }
 
-
+#title-contact{
+  padding-top:10vh;
+}
 
 
 #section1{
@@ -203,4 +218,68 @@ a {
 }
 .title-description{
   color: #E0DFD5;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 5vh;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: 9;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 2s ease-in-out infinite;
+    -moz-animation: fade_move_down 2s ease-in-out infinite;
+    animation: fade_move_down 2s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes fade_move_down {
+ 0% {
+-webkit-transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+-webkit-transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+@-moz-keyframes fade_move_down {
+ 0% {
+-moz-transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+-moz-transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+@keyframes fade_move_down {
+ 0% {
+transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
 }

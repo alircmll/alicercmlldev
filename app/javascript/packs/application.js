@@ -264,4 +264,6 @@ $('.contact-form').find('.form-control').blur(function() {
         new WOW().init();
     })(jQuery);
 
-// new home`
+// services
+
+

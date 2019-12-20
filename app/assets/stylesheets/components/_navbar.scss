@@ -4,7 +4,8 @@
   height: 55px;
   padding: $pad;
   transition: all ease 500ms;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.9);
+
 }
 
 .navbar-lewagon {
@@ -18,6 +19,7 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+
 }
 
 .nav-link{
@@ -29,7 +31,8 @@
 
 #name{
   font-family: "Montserrat",sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  color: $canard;
 }
 
 .nav {
@@ -168,6 +171,11 @@
 
 $pix-size: 6px; // <---- Definir la taille du menu
 
+
+// #dotsMenu{
+
+//   padding-top: 3px;
+// }
 #dotsMenuClose {
   position: absolute;
   top: 15.5px;
@@ -182,9 +190,11 @@ $pix-size: 6px; // <---- Definir la taille du menu
   z-index: 1000;
   top: -3px;
 
+
   a {
     margin: 0;
     padding: 0;
+
   }
 
   .pix {
@@ -312,8 +322,9 @@ $pix-size: 6px; // <---- Definir la taille du menu
     font-size: 20px;
     position: absolute;
     right: 22px;
-    top: 0;
+    top: 7px;
     width: 30px;
+    // padding-top: 3px;
 }
 
 @media only screen and (max-width: 766px) {

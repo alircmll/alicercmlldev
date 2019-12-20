@@ -10,40 +10,6 @@ $BG-color: #AD1457; /* dark pink for the bg-color */
 $box-color: #DBE8E8; /*dark cayn for the boxes */
 $font-color: #485B61; /* light pink  for the words*/
 
-// body {
-//   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-//   background: $BG-color;
-//   color: $font-color;
-//   overflow-x: hidden;
-//   padding-bottom: 50px;
-// }
-
-/* INTRO SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-// .intro {
-//   // background: $box-color;
-//   padding: 100px 0;
-// }
-
-// .container {
-//   width: 90%;
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   text-align: center;
-// }
-
-// h1 {
-//   font-size: 2.5rem;
-// }
-
-
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-// .timeline{
-//   margin-top: 0vh;
-//   // height: auto;
-// }
 
 .arrow{
   font-size: 4em;
@@ -64,7 +30,7 @@ $font-color: #485B61; /* light pink  for the words*/
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 10px;
+  width: 3px;
   margin: 0 auto;
   padding-top: 50px;
   background: $font-color;
@@ -76,8 +42,8 @@ $font-color: #485B61; /* light pink  for the words*/
   left: 50%;
   bottom: -0.9px;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: inherit;
 }
@@ -145,7 +111,7 @@ span{
 }
 
 .timeline ul li.in-view::after {
-  background: $box-color;
+  background: $canard;
 }
 
 .timeline ul li div {
