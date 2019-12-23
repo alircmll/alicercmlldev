@@ -5,13 +5,9 @@
   padding: $pad;
   transition: all ease 500ms;
   background-color: rgba(255,255,255,0.9);
-
-}
-
-.navbar-lewagon {
   justify-content: space-between;
-  // background: transparent;
 }
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
@@ -44,10 +40,6 @@
   display: block;
   padding: 10px 15px;
 }
-// .table {
-//   display:flex;
-//   align-items: space-between;
-// }
 
 .navbar-fixed-top {
     position: fixed;
@@ -60,7 +52,6 @@
   background-color: $contrast; // BG DU MENU
 
   .logo {
-    // font-family: "Poppins" !important;
     letter-spacing: 10px;
   }
 
@@ -143,11 +134,11 @@
       font-size: 30px;
       line-height: 0.5em;
     }
+
     // COULEURS MENU
     a {
       text-transform: uppercase;
       font-size: 16px; // MENU ZISE
-      // color: red;
       font-weight: 700;
       letter-spacing: 0em;
       transition: all 300ms ease;
@@ -171,11 +162,6 @@
 
 $pix-size: 6px; // <---- Definir la taille du menu
 
-
-// #dotsMenu{
-
-//   padding-top: 3px;
-// }
 #dotsMenuClose {
   position: absolute;
   top: 15.5px;
@@ -317,25 +303,21 @@ $pix-size: 6px; // <---- Definir la taille du menu
 
 
 #dotsMenu {
-    display: none;
-    cursor: pointer;
-    font-size: 20px;
-    position: absolute;
-    right: 22px;
-    top: 7px;
-    width: 30px;
-    // padding-top: 3px;
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 7px;
+  width: 30px;
 }
 
 @media only screen and (max-width: 766px) {
-#dotsMenu {
+  #dotsMenu {
     display: block;
+  }
 }
-}
+
 #dotsMenu .pix {
-    // width: 30px;
-    // height: 4px;
-    // margin-bottom: 6px;
-    // background: #000000;
-    display: block;
+  display: block;
 }

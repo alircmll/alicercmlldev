@@ -17,25 +17,18 @@ input[type=submit]{
   box-shadow: none;
 }
 input[type="submit"]:hover {
-    color: #fff;
-    background-color: #008080;
-    border-color: #008080;
-    background-position: 0.45em bottom;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  color: #fff;
+  background-color: #008080;
+  border-color: #008080;
+  background-position: 0.45em bottom;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 input[type="submit"]:focus {
-    background-position: 2em -6em;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  background-position: 2em -6em;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-/* Webfonts */
 
-// @font-face {
-//     font-family: 'Open Sans';
-//     font-style: normal;
-//     font-weight: 700;
-//     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
-// }

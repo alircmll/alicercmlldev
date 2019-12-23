@@ -16,7 +16,6 @@
         <div class="container-about text-center">
           <h1>Parcours</h1>
           <%#= render"shared/download" %>
-           <%= link_to 'Download PDF', home_download_pdf_path %>
           <!-- <div class="arrow"> -->
            <!-- <h5 class="arrow">&darr;</h5> -->
           <!-- </div> -->
@@ -49,12 +48,16 @@
             <time>2014</time><br><span>Baccalauréat Scientifique - Physique-Chimie</span>
           </div>
         </li>
-        <li>
+        <!-- <li>
           <div>
-            <time>Retrouvez-moi!</time><h5 class="find-me"> <a href="https://github.com/alircmll" class="fab fa-github"></a>  <a href="https://www.linkedin.com/in/alice-roy-camille-a4236b199/" class="fab fa-linkedin"></a></h5>
+            <time>Télécharger mon CV</time>
           </div>
-        </li>
+        </li> -->
       </ul>
+      <%= link_to 'cv.pdf', download: '' do %>
+        <div class="btn">Mon CV</div>
+    <% end %>
+
     </section>
 
       <section class="et-slide" id="tab-flexbox" id= "section-profil" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
