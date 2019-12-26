@@ -1,52 +1,131 @@
 // @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 // MODAL MENU NAVBAR +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-.navbar {
-  height: 55px;
-  padding: $pad;
-  transition: all ease 500ms;
-  background-color: rgba(255,255,255,0.9);
-  justify-content: space-between;
-}
 
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-
-}
-
-.nav-link{
-  color: rgb(145, 153, 157);
-  &:hover{
-    color:$canard;
-  }
-}
-
-#name{
-  font-family: "Montserrat",sans-serif;
-  font-size: 18px;
-  color: $canard;
-}
-
 .nav {
   list-style: none;
-  display:inline;
+
 }
 .nav>li>a {
   position: relative;
-  display: block;
+  // display: block;
   padding: 10px 15px;
 }
 
 .navbar-fixed-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* Solid class attached on scroll past first section */
+
+
+
+.navbar-custom .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 0;
+
+}
+
+.navbar-brand {
+  float: left;
+  // height: 50px;
+  padding: 5px 50px;
+  font-size: 18px;
+  line-height: 20px;
+
+  &:hover  {
+    color: white !important;
   }
+}
+
+
+.collapse {
+  margin-right: 25px;
+}
+
+.list-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+
+  li {
+    display: inline;
+
+    a {
+      margin: 0 0 0 10px;
+      font-size: 12px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      position: relative;
+
+      &:hover{
+        color: $canard;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      }
+
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        width: 0;
+        margin-bottom: -5px;
+      }
+    }
+  }
+}
+
+
+.navbar {
+  background: none;
+  border-radius: 0;
+  border: 0;
+  padding: 20px 50px;
+  transition:
+  padding 0.5s ease;
+  text-transform: uppercase;
+  height: 55px;
+  border: none;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 1s ease 0s;
+
+  &.solid-nav {
+    background-color: #eee;
+    // color: black;
+    border-bottom: 0.5px solid #91999d;
+    padding: 5px 50px;
+    transition:
+      background-color 0.5s ease,
+      padding 0.5s ease;
+        a.navbar-brand{
+          color: $canard;
+        }
+      li {
+          a{
+          color: black;
+        }
+      }
+  }
+}
+
+
 
 #modalNavigation {
   background-color: $contrast; // BG DU MENU
@@ -307,8 +386,8 @@ $pix-size: 6px; // <---- Definir la taille du menu
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  right: 22px;
-  top: 7px;
+  right: 31px;
+  top: 8px;
   width: 30px;
 }
 
@@ -321,3 +400,8 @@ $pix-size: 6px; // <---- Definir la taille du menu
 #dotsMenu .pix {
   display: block;
 }
+// transparent navbar
+
+
+
+

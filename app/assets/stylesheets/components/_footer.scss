@@ -1,6 +1,14 @@
 #footer {
+  height:100px;
     background-color: $white;
-    color: $primary;
+    color: #848482;
     opacity: 100%;
     z-index: 1200;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    a{
+      color: #848482;
+      text-decoration: none;
+    }
 }

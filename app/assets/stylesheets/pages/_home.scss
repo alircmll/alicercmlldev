@@ -29,10 +29,19 @@ a {
 }
 
 #tab-es6{
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1488921618671-463b781ac428?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=thierry-meier-PKEPAeMBOIU);
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), image_url('desk1.jpg');
   background-repeat :no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+}
+.title-name{
+  color: #E0DFD5;
+  text-shadow: 0.5px 1px 3px $gray;
+  font-size: 64px !important;
+}
+.title-description{
+  color: #E0DFD5;
+  // text-shadow: 0.2px 0.2px 1px black;
 }
 
 #tab-angular{
@@ -45,7 +54,7 @@ a {
   background-repeat :no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=pierre-chatel-innocenti-pxoZSTdAzeU);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), image_url('lampe.jpg');
   color: white;
 
 }
@@ -54,7 +63,7 @@ a {
   padding-top: 10vh;
   padding-bottom: 10vh;
   height: 67vh;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://images.unsplash.com/photo-1561746254-c5c290762792?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=monica-sauro-Z3vq1JvQZ);
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),image_url('laptod.jpg');
   background-attachment: fixed;
   background-repeat :no-repeat;
   background-size: cover;
@@ -172,13 +181,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.title-name{
-  color: #E0DFD5;
-  font-size: 64px !important;
-}
-.title-description{
-  color: #E0DFD5;
-}
 
 .scroll-down {
   position: absolute;

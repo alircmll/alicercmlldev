@@ -1,0 +1,17 @@
+.scroll-up {
+  position: fixed;
+  z-index: 999;
+  bottom: 1.8em;
+  right: 1.8em;
+}
+
+.scroll-up a {
+    color: #848482;
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+}
+

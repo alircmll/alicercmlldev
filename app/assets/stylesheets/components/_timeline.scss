@@ -63,6 +63,13 @@ $font-color: #485B61;
 
 }
 
+.timeline ul li.in-view div.outline {
+  border: none;
+}
+.timeline ul li div.outline::before {
+  display: none;
+}
+
 .timeline ul li:nth-child(odd) div {
   left: 45px;
 }

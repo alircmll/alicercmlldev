@@ -1,17 +1,21 @@
-<nav id="navMenu" class="navbar navbar-custom navbar-fixed-top navbar-expand-sm navbar-light">
+<nav id="navMenu" class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-custom navbar-fixed-top">
 
-  <%= link_to "#tab-es6", class: "navbar-brand" do %>
-     <span id="name">AliceRcmll</span>
-  <% end %>
-  <div class="d-flex" id="">
-    <%# LOGIN USER %>
+  <%#= link_to "#tab-es6", class: "navbar-brand" do %>
+     <!-- <span id="name">AliceRcmll</span> -->
+  <%# end %>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#tab-es6">AliceRcmll</a>
+          </div>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="nav-link" href="#tab-es6">Accueil</a>
-            <a class="nav-link" href="#tab-react">Parcours</a>
-            <a class="nav-link" href="#tab-angular">Outils</a>
-            <a class="nav-link" href="#tab-other">Contact</a>
-        </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="list-nav">
+              <li><a href="#tab-es6">Accueil</a></li>
+              <li><a href="#tab-react">Parcours</a></li>
+              <li><a href="#tab-angular">Outils</a></li>
+              <li><a href="#tab-other">Contact</a></li>
+            </ul>
+          </div>
+
 
     <%# MENU DOTS %>
     <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
@@ -25,9 +29,10 @@
       <div class="pix"></div>
       <div class="pix"></div>
     </a>
-  </div>
 </nav>
 <%# NAVBAR TOP MENU END %>
+
+
 <%# MODAL MENU START %>
 <div class="modal fade" id="modalNavigation" role="dialog"  aria-hidden="true">
   <%# BUTTON CLOSE %>
@@ -68,3 +73,28 @@
     </div>
   </div>
 </div>
+
+
+
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#tab-es6">AliceRcmll</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#tab-es6">Accueil</a></li>
+            <li><a href="#tab-react">Parcours</a></li>
+            <li><a href="#tab-angular">Outils</a></li>
+            <li><a href="#tab-other">Contact</a></li>
+          </ul>
+        </div>/.nav-collapse
+      </div>
+    </nav>
+  -->
