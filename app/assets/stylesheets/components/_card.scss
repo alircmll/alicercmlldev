@@ -18,7 +18,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-a.btn {
+a.btn-card {
   background: $teal;
   border-radius: 4px;
   box-shadow: 0 2px 0px 0 rgba(0,0,0,0.25);
@@ -30,15 +30,15 @@ a.btn {
   transition: all 0.1s 0s ease-out;
 }
 
-.no-touch a.btn:hover {
+.no-touch a.btn-card:hover {
   background: lighten($teal,2.5);
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   transform: translateY(-2px);
   transition: all 0.25s 0s ease-out;
 }
 
-.no-touch a.btn:active,
-a.btn:active {
+.no-touch a.btn-card:active,
+a.btn-card:active {
   background: darken($teal,2.5);
   box-shadow: 0 1px 0px 0 rgba(255,255,255,0.25);
   transform: translate3d(0,1px,0);
@@ -80,6 +80,7 @@ div.card {
       right: 15px;
       top: 10px;
       width: 32px;
+      outline: 0;
 
       span {
         background: $white;
@@ -92,11 +93,11 @@ div.card {
       }
 
       span.left {
-        right: 14px;
+        right: 13px;
         transform: rotate(45deg);
       }
       span.right {
-        left: 14px;
+        left: 13px;
         transform: rotate(-45deg);
       }
     }
@@ -169,6 +170,7 @@ div.card.show {
   div.card-title {
     a.toggle-info {
       background: $salmon !important;
+      outline: 0;
       span {
         top: 15px;
       }
@@ -176,7 +178,7 @@ div.card.show {
         right: 10px;
       }
       span.right {
-        left: 10px;
+        left: 9px;
       }
     }
   }
@@ -195,4 +197,29 @@ div.card.show {
 .card__image{
   width: 300px;
   height: 150px;
+}
+
+#tab-folio{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px){
+  // #tab-folio{
+  //   height: 117vh;
+  // }
+  div.cards {
+    padding: 30px auto;
+  }
+  .card__image{
+    width: 300px;
+    height: 150px;
+  }
+  .head-card{
+    display: none;
+  }
 }
