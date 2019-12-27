@@ -32,6 +32,7 @@ a {
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), image_url('desk1.jpg');
   background-repeat :no-repeat;
   background-size: cover;
+  height: 100vh;
   // background-attachment: fixed;
 }
 .title-name{
@@ -70,6 +71,13 @@ a {
   color: white;
 }
 
+#tab-folio{
+  height: 100vh;
+}
+
+
+
+
 @media (max-width: 768px){
   #tab-flexbox{
     height: 80vh;
@@ -85,7 +93,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     position: relative;
     background: #eee;
     text-align: center;

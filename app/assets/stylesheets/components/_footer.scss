@@ -10,5 +10,14 @@
     a{
       color: #848482;
       text-decoration: none;
+      &:hover{
+        color: $canard;
+         transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      }
     }
+}
+
+.footer-icon{
+  display: flex;
+  justify-content: space-around;
 }
