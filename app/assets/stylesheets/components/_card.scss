@@ -63,7 +63,7 @@ div.card {
   z-index: 1;
 
   img {
-    max-width: 300px;
+    max-width: 298px;
   }
 
   div.card-title {
@@ -97,22 +97,22 @@ div.card {
         transform: rotate(45deg);
       }
       span.right {
-        left: 13px;
+        left: 14px;
         transform: rotate(-45deg);
       }
     }
 
     h2 {
-      font-size: 24px;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: 500;
       letter-spacing: -0.05em;
       margin: 0;
       padding: 0;
 
       small {
         display: block;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 300;
         letter-spacing: -0.025em;
       }
     }
@@ -206,7 +206,12 @@ div.card.show {
   justify-content: center;
   align-items: center;
 }
-
+.head-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (max-width: 768px){
   // #tab-folio{
