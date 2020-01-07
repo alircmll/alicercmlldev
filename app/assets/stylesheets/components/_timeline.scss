@@ -22,10 +22,11 @@ $font-color: #485B61;
   padding: 0px 0;
 }
 
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 3px;
+  width: 1.5px;
   margin: 0 auto;
   padding-top: 50px;
   background: $canard;
@@ -37,8 +38,8 @@ $font-color: #485B61;
   left: 50%;
   bottom: -0.9px;
   transform: translateX(-50%);
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: $box-color;
 }
@@ -59,7 +60,7 @@ $font-color: #485B61;
   bottom: 7px;
   width: 0;
   height: 0;
-  border-style: solid;
+  // border-style: solid;
 
 }
 
