@@ -11,19 +11,142 @@ $tealShade: #007c85;
 
 $darkGrey: #4f585e;
 
-.card-container{
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.wrap {
+  margin: 2rem;
+
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+
+  cursor: pointer;
+}
+
+.container-card {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 28rem;
+  height: 15rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
 
   display: flex;
-  justify-content: space around;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+  background-position: var(--bX) var(--bY);
+  background-size: 40rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+  transition: transform .6s 1s;
+}
+
+.container-card::before,
+.container-card::after {
+  content: "";
+
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+
+  position: absolute;
+  z-index: 2;
+
+  opacity: .3;
+  transition: .3s;
+}
+
+.container-card::before {
+  top: 2rem;
+  right: 2rem;
+
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.container-card::after {
+  bottom: 2rem;
+  left: 2rem;
+
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.container-card--active {
+  transition: none;
+}
+
+.container--1{
+  background:image_url('green.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
 
 }
 
+.container--2 {
+  // filter: hue-rotate(80deg) saturate(140%);
+  background: image_url('hu_m.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+.container--3 {
+  // filter: hue-rotate(160deg) saturate(140%);
+  background: image_url('alircmll.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+.container-card p {
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 2.2rem;
+}
+
+.wrap:hover .container-card::before,
+.wrap:hover .container-card::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.card-detail{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+.card-info{
+  a{
+    text-decoration: none;
+    &:hover{
+      transition: width 0.5s ease 0s, left 0.3s ease 0s;
+    }
+  }
+}
+
  #tab-folio{
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10vh;
 }
 
 .head-card{
@@ -33,127 +156,127 @@ $darkGrey: #4f585e;
   justify-content: center;
 }
 
-.card {
-  min-width: 275px;
-  width: 275px;
-  position: relative;
-  margin: 15px 15px;
-  height: 350px;
-  border-radius: 7px;
-  background-size: cover;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
-  transition: 0.2s all linear;
-  border: 1px solid rgba(128, 128, 128, 0.15);
-  box-sizing: border-box;
-}
+// .card {
+//   min-width: 275px;
+//   width: 275px;
+//   position: relative;
+//   margin: 15px 15px;
+//   height: 350px;
+//   border-radius: 7px;
+//   background-size: cover;
+//   background: rgba(0, 0, 0, 0.2);
+//   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+//   transition: 0.2s all linear;
+//   border: 1px solid rgba(128, 128, 128, 0.15);
+//   box-sizing: border-box;
+// }
 
-.card .card-social {
-  position: absolute;
-  height: 75px;
-  width: 100%;
-  background: red;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  background: rgba(0, 0, 0, 0.6);
-  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
-  top: 275px;
-}
+// .card .card-social {
+//   position: absolute;
+//   height: 75px;
+//   width: 100%;
+//   background: red;
+//   border-bottom-right-radius: 5px;
+//   border-bottom-left-radius: 5px;
+//   background: rgba(0, 0, 0, 0.6);
+//   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+//   top: 275px;
+// }
 
-.card .card-social ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
+// .card .card-social ul {
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: space-around;
+// }
 
-.card .card-social ul li {
-  height: 100%;
-  text-align: center;
-  line-height: 75px;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.85);
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
+// .card .card-social ul li {
+//   height: 100%;
+//   text-align: center;
+//   line-height: 75px;
+//   font-size: 1.5em;
+//   color: rgba(255, 255, 255, 0.85);
+//   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+// }
 
-.card .card-social ul li:hover {
-  text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.7);
-  transition: all 0.1s linear;
-}
+// .card .card-social ul li:hover {
+//   text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.7);
+//   transition: all 0.1s linear;
+// }
 
-.card .card-image {
-  width: 100%;
-  height: 275px;
-  position: relative;
-  background-image: url("https://d13yacurqjgara.cloudfront.net/users/150724/screenshots/2211976/365_the_end_1x.png");
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
+// .card .card-image {
+//   width: 100%;
+//   height: 275px;
+//   position: relative;
+//   background-image: url("https://d13yacurqjgara.cloudfront.net/users/150724/screenshots/2211976/365_the_end_1x.png");
+//   border-top-right-radius: 5px;
+//   border-top-left-radius: 5px;
+// }
 
-.card .card-info {
-  position: relative;
-  width: 100%;
-  height: 35px;
-  line-height: 35px;
-  top: -265px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  font-family: 'Open Sans';
-  color: rgba(255, 255, 255, 0.85);
-}
+// .card .card-info {
+//   position: relative;
+//   width: 100%;
+//   height: 35px;
+//   line-height: 35px;
+//   top: -265px;
+//   border-top-right-radius: 5px;
+//   border-top-left-radius: 5px;
+//   font-family: 'Open Sans';
+//   color: rgba(255, 255, 255, 0.85);
+// }
 
-.card .card-info .card-title {
-  line-height: 35px;
-  height: 35px;
-  position: relative;
-  top: 0px;
-  font-size: 25px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
-}
+// .card .card-info .card-title {
+//   line-height: 35px;
+//   height: 35px;
+//   position: relative;
+//   top: 0px;
+//   font-size: 25px;
+//   text-align: center;
+//   background: rgba(0, 0, 0, 0.6);
+//   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+// }
 
-.card .card-info .card-detail {
-  line-height: 1.5em;
-  font-size: 1em;
-  height: 220px;
-  background: rgba(0, 0, 0, 0.6);
-  position: relative;
-  top: 5px;
-  padding: 5px 20px 0px 20px;
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: center top;
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
-}
+// .card .card-info .card-detail {
+//   line-height: 1.5em;
+//   font-size: 1em;
+//   height: 220px;
+//   background: rgba(0, 0, 0, 0.6);
+//   position: relative;
+//   top: 5px;
+//   padding: 5px 20px 0px 20px;
+//   opacity: 0;
+//   transform: scaleY(0);
+//   transform-origin: center top;
+//   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+// }
 
-.card:hover {
-  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
-}
+// .card:hover {
+//   box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
+// }
 
-.card:hover .card-info .card-title {
-  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
-  transition: 0.3s all linear;
-}
+// .card:hover .card-info .card-title {
+//   box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
+//   transition: 0.3s all linear;
+// }
 
-.card:hover .card-info .card-detail {
-  opacity: 1;
-  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
-  transition: 0.35s all linear;
-  transition-delay: 0.1s;
-  transform: scaleY(1);
-}
+// .card:hover .card-info .card-detail {
+//   opacity: 1;
+//   box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
+//   transition: 0.35s all linear;
+//   transition-delay: 0.1s;
+//   transform: scaleY(1);
+// }
 
-.card:nth-of-type(2) .card-image {
-  background-image: image_url('hu_m.png');
-}
+// .card:nth-of-type(2) .card-image {
+//   background-image: image_url('hu_m.png');
+// }
 
-.card:nth-of-type(3) .card-image {
-  background-image: image_url('alircmll.png');
-}
+// .card:nth-of-type(3) .card-image {
+//   background-image: image_url('alircmll.png');
+// }
 
 // a.btn-card {
 //   background: $teal;

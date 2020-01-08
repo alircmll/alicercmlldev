@@ -1,5 +1,5 @@
 <body id="homeTop" class="index" data-pinterest-extension-installed="cr1.3.4">
-  <div class="scroll-up">
+  <div class="scroll-up bounce">
     <a href="#homeTop">
       <i class="fas fa-angle-double-up"></i>
     </a>
@@ -58,7 +58,57 @@
         </li>
       </ul>
     </section>
-
+      <section class="et-slide" id="tab-angular" >
+        <div id="skills" class="container-fluid amg-skills">
+            <h1 id="title-skills">Outils</h1>
+            <div class="row">
+              <div class="col-xs-6 amg-badge">
+               <%= image_tag('ruby.png', class:"img") %>
+               <h3 class="title">Ruby</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+                <img class="img" src="https://seeklogo.com/images/R/ruby-on-rails-logo-95951CC5FB-seeklogo.com.png" alt="rails">
+                <h3 class="title">Rails</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+               <%= image_tag('js.png', class:"img" ) %>
+               <h3 class="title">JavaScript</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+                <%= image_tag('html5.svg', class:"img") %>
+                <h3 class="title">HTML5</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+                <%= image_tag('css-3.svg', class:"img") %>
+                <h3 class="title">CSS3</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+               <%= image_tag('jquer.png', class:"img" ) %>
+               <h3 class="title">JQuery</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+               <%= image_tag('Boots.png', class:"img" ) %>
+               <h3 class="title">Bootsrap</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+               <%= image_tag('heroku.png', class:"img") %>
+               <h3 class="title">Heroku</h3>
+              </div>
+               <div class="col-xs-6 amg-badge">
+               <%= image_tag('github.svg', class:"img") %>
+               <h3 class="title">Github</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+               <%= image_tag('Postgresql.svg', class:"img") %>
+               <h3 class="title">Postgresql</h3>
+              </div>
+              <div class="col-xs-6 amg-badge">
+               <%= image_tag('photoshop.png', class:"img") %>
+               <h3 class="title">Photoshop</h3>
+              </div>
+            </div>
+        </div>
+      </section>
     <section class="et-slide" id="tab-flexbox" id= "section-profil" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
         <div class="container">
           <div class="row container-profil">
@@ -82,76 +132,11 @@
           </div>
         </div>
     </section>
-
       <%= render"shared/card" %>
-
-
-    <section class="et-slide" id="tab-angular" >
-      <div id="skills" class="container-fluid amg-skills">
-          <h1 id="title-skills">Outils</h1>
-          <div class="row">
-            <div class="col-xs-6 amg-badge">
-             <%= image_tag('ruby.png', class:"img") %>
-             <h3 class="title">Ruby</h3>
-            </div>
-            <div class="col-xs-6 amg-badge">
-              <img class="img" src="https://seeklogo.com/images/R/ruby-on-rails-logo-95951CC5FB-seeklogo.com.png" alt="rails">
-              <h3 class="title">Rails</h3>
-            </div>
-            <div class="col-xs-6 amg-badge">
-             <%= image_tag('js.png', class:"img" ) %>
-             <h3 class="title">JavaScript</h3>
-            </div>
-            <div class="col-xs-6 amg-badge">
-              <%= image_tag('html5.svg', class:"img") %>
-              <h3 class="title">HTML5</h3>
-            </div>
-            <div class="col-xs-6 amg-badge">
-              <%= image_tag('css-3.svg', class:"img") %>
-              <h3 class="title">CSS3</h3>
-            </div>
-            <div class="col-xs-6 amg-badge">
-             <%= image_tag('heroku.png', class:"img") %>
-             <h3 class="title">Heroku</h3>
-            </div>
-             <div class="col-xs-6 amg-badge">
-             <%= image_tag('github.svg', class:"img") %>
-             <h3 class="title">Github</h3>
-            </div>
-            <div class="col-xs-6 amg-badge">
-             <%= image_tag('Postgresql.svg', class:"img") %>
-             <h3 class="title">Postgresql</h3>
-            </div>
-            <div class="col-xs-6 amg-badge">
-             <%= image_tag('photoshop.png', class:"img") %>
-             <h3 class="title">Photoshop</h3>
-            </div>
-          </div>
-      </div>
-      <!-- <div class="wrapper">
-        <div class="skill">
-            <p>Français</p>
-            <div class="skill-bar skill1 wow slideInLeft animated">
-                <span class="skill-count1">100%</span>
-            </div>
-        </div>
-        <div class="skill">
-            <p>Anglais</p>
-            <div class="skill-bar skill2 wow slideInLeft animated">
-                 <span class="skill-count2">95%</span>
-            </div>
-        </div>
-        <div class="skill">
-            <p>Espagnol</p>
-            <div class="skill-bar skill3 wow slideInLeft animated">
-                <span class="skill-count3">55%</span>
-            </div>
-        </div>
-      </div> -->
     </section>
     <section class="et-slide" id="tab-other">
       <h1 id="title-contact">Contact</h1>
-      <h3>Envoyez-moi un message</h3>
+      <!-- <h3><i>- Envoyez-moi un message -</i></h3> -->
     <%= render"shared/formcontact" %>
   </section>
 </main>
