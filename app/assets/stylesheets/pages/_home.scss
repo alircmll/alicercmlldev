@@ -13,8 +13,8 @@ h1 {
 }
 
 h5{
-font-family: "Montserrat", serif, sans-serif;
-font-size: 24px;
+  font-family: "Montserrat", serif, sans-serif;
+  font-size: 24px;
 }
 
 
@@ -64,7 +64,7 @@ a {
 #tab-flexbox{
   padding-top: 10vh;
   padding-bottom: 10vh;
-  height: 67vh;
+  // height: 67vh;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),image_url('laptod.jpg');
   background-attachment: fixed;
   background-repeat :no-repeat;
@@ -73,14 +73,14 @@ a {
 }
 
 
-@media (max-width: 768px){
-  #tab-flexbox{
-    height: 80vh;
-  }
-  .stats{
-    padding:5px;
-  }
-}
+// @media (max-width: 768px){
+//   #tab-flexbox{
+//     height: 80vh;
+//   }
+//   .stats{
+//     padding:5px;
+//   }
+// }
 
 .et-hero-tabs,
 .et-slide {
