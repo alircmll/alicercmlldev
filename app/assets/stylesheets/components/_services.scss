@@ -1,34 +1,23 @@
-// #tab-services{
+#tab-services{
 //   width:100%;
-// }
+  // background-image:  image_url('map.jpg');
+  // background-repeat :no-repeat;
+  // background-size: cover;
+  // background: #dbdbdb;
+  // background: #fff;
+}
 
-// .service-content{
-//   padding-right: 30px;
-//   padding-left: 30px;
-//   width:100%;
-//   display: flex;
-//   justify-content: space-between;
-// }
-// .row1{
-//   display: flex;
-//   flex-direction: column;
-// }
-// .row2{
-//   display: flex;
-//   flex-direction: column;
-// }
-// .iconbox{
-//   text-align: start;
-// }
-
+// title
 .services-header{
   margin-bottom: 45px;
   margin-top: 45px;
 }
 
+
 #services .f-iconbox {
   font-size: 16px;
 }
+// row de gauche
 .f-iconbox.right {
   padding-left: 0;
   text-align: right;
@@ -45,6 +34,8 @@
 .padding-bottom-30 {
   padding-bottom: 30px!important;
 }
+
+// icons
 
 .f-iconbox .icon {
   left: 0;
@@ -73,8 +64,8 @@
 }
 
 .f-iconbox .icon {
-  color: $primary;
-  border-color: $primary;
+  color: #2A9D8F;
+  border-color: #2A9D8F;
 }
 
 .f-iconbox.right .icon {

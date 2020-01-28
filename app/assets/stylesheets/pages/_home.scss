@@ -30,7 +30,7 @@ a {
 }
 
 #tab-es6{
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), image_url('desk1.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)), image_url('desk1.jpg');
   background-repeat :no-repeat;
   background-size: cover;
   height: 100vh;
@@ -55,8 +55,8 @@ a {
   padding-top: 10vh;
   background-repeat :no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), image_url('lampe.jpg');
+  // background-attachment: fixed;
+  background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)), image_url('lampe.jpg');
   color: white;
 
 }
