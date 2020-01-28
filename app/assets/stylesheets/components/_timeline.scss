@@ -46,6 +46,15 @@ $font-color: #485B61;
   // position: relative;
   // left: 7%;
 }
+
+
+
+.img-timeline{
+  padding: 22px 5%;
+  height:90px;
+  width:85px;
+}
+
 // tout l'encardré
 
 // .timeline-contentt{
@@ -60,10 +69,12 @@ $font-color: #485B61;
 
 //logo timeline
 
-// .timeline-logo{
-//   display: flex;
-//   justify-content: space-around;
-// }
+.timeline-logo{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
