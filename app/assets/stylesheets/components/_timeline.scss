@@ -57,23 +57,23 @@ $font-color: #485B61;
 
 // tout l'encardré
 
-// .timeline-contentt{
-// //   display: flex;
-// //   flex-direction: column;
-// //   justify-content: center;
-// //   align-items: center;
-//   background: #fff;
-//   box-shadow: 0 3px 0 rgba(0,0,0,0.1);
-// //   // border-radius: 5px;
-// }
+.row-content{
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background: #fff;
+  // box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+//   // border-radius: 5px;
+}
 
 //logo timeline
 
-.timeline-logo{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+// .timeline-logo{
+//   display: flex;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+// }
 
 .timeline ul li {
   list-style-type: none;

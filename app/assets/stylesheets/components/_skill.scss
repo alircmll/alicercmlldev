@@ -26,9 +26,10 @@
 
 @media (max-width: 768px){
   .img {
-    height:80px;
-    width:75px;
-    display:block;
+    height: 90px;
+    width: 75px;
+    // display: block;
+    display: -webkit-inline-box;
   }
   .amg-badge {
     padding: 41px 5%;
