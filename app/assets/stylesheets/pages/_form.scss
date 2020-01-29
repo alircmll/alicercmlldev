@@ -17,8 +17,12 @@ $form-bg         : #fff;
     padding: 25px;
     position: relative;
     margin-bottom: 20px;
+    transition: all 300ms ease-out;
+    &:hover{
+       background-color: rgba($canard, 0.4);
+    }
     &.focus{
-      background-color: $form-bg;
+      background-color: rgba(white, .8);
     }
     &.textarea{
       height: auto;
@@ -36,8 +40,9 @@ $form-bg         : #fff;
       font-weight: 300;
       z-index: 1;
       color: $secondary-color;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 10px;
+      font-family: "Roboto", serif, sans-serif;
     }
     .form-control{
       background-color: transparent;

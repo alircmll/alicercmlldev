@@ -1,5 +1,5 @@
 body {
-     background: white;
+     background-color: #f5f5f5;
     color: $darkGrey;
 }
 
@@ -12,11 +12,15 @@ h1 {
   font-size: 48px;
 }
 
-h5{
+h3, h4, h5{
   font-family: "Montserrat", serif, sans-serif;
   font-size: 24px;
 }
 
+p{
+  font-family: "Roboto", serif, sans-serif;
+  font-size: 16px;
+}
 
 a {
   text-decoration: none;
@@ -30,7 +34,7 @@ a {
 }
 
 #tab-es6{
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), image_url('desk1.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)), image_url('desk1.jpg');
   background-repeat :no-repeat;
   background-size: cover;
   height: 100vh;
@@ -55,8 +59,8 @@ a {
   padding-top: 10vh;
   background-repeat :no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), image_url('lampe.jpg');
+  // background-attachment: fixed;
+  background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)), image_url('lampe.jpg');
   color: white;
 
 }
@@ -162,13 +166,6 @@ a {
 .container-skill{
   display: flex;
   justify-content: space-around;
-}
-.profil-title{
-  margin-bottom: 80px;
-  text-align: center;
-  font-size: 43px;
-  line-height: 50px;
-  position: relative;
 }
 
 
