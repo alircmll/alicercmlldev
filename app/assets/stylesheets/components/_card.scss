@@ -17,6 +17,7 @@ $darkGrey: #4f585e;
   justify-content: center;
   align-items: center;
   margin-top: 3px;
+  max-width: 100vw;
 }
 
 .wrap {
@@ -91,6 +92,7 @@ $darkGrey: #4f585e;
   background:image_url('green.png');
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100vw;
 
 
 }
@@ -100,6 +102,7 @@ $darkGrey: #4f585e;
   background: image_url('hu_m.png');
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100vw;
 
 
 }
@@ -109,6 +112,7 @@ $darkGrey: #4f585e;
   background: image_url('alircmll.png');
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100vw;
 
 
 }
