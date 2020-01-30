@@ -40,7 +40,8 @@
   line-height: 20px;
 
   &:hover  {
-    color: #6f1f13 !important;
+    // color: #6f1f13 !important;
+    color: black !important;
   }
 }
 
@@ -67,7 +68,8 @@
       position: relative;
 
       &:hover{
-        color: #6f1f13;
+        // color: #6f1f13;
+        color: black;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
       }
 
