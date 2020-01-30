@@ -40,7 +40,7 @@
   line-height: 20px;
 
   &:hover  {
-    color: white !important;
+    color: #6f1f13 !important;
   }
 }
 
@@ -67,7 +67,7 @@
       position: relative;
 
       &:hover{
-        color: $canard;
+        color: #6f1f13;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
       }
 
@@ -107,17 +107,22 @@
   &.solid-nav {
     background-color: #f5f5f5;
     // color: black;
-    border-bottom: 2px solid #91999d;
+    border-bottom: 1px solid #91999d;
     padding: 5px 50px;
     transition:
       background-color 0.5s ease,
       padding 0.5s ease;
         a.navbar-brand{
-          color: $canard;
+          display: none;
+
         }
       li {
           a{
           color: black;
+
+          &:hover{
+//  ADD HOVER ON NAV LIST ITEM WHEN SOLID <<<<-----------
+          }
         }
       }
   }

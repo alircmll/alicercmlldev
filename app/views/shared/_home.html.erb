@@ -4,21 +4,24 @@
       <i class="fas fa-angle-double-up"></i>
     </a>
   </div>
- <%= render"shared/navbar" %>
-  <section class="et-hero-tabs" class="et-slide" id="tab-es6" id="section1">
+  <%= render"shared/navbar" %>
+  <%= render"shared/acceuil" %>
+
+                      <!-- ancienne section acceuil -->
+
+  <!-- <section class="et-hero-tabs" class="et-slide" id="tab-es6" id="section1">
     <h1 class="title-name">Alice Rcmll</h1>
     <h5 class="title-description">Développeur Web FullStack Freelance </h5>
     <a href="#tab-react">
       <div class="scroll-down"></div>
     </a>
-  </section>
+  </section> -->
+
 
   <!-- Main -->
   <main class="et-main">
     <%= render"shared/profil" %>
-    <%= render"shared/services" %>
-    <%= render"shared/tools" %>
-   <section class="et-slide" id="tab-flexbox" id= "section-profil" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+    <section class="et-slide" id="tab-flexbox" id= "section-profil" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
       <div class="container">
         <div class="row container-profil">
           <div class="col-lg-3 stats">
@@ -26,13 +29,11 @@
             <div class="counting" data-count="40000">0</div>
             <h5>Lignes de code</h5>
           </div>
-
           <div class="col-lg-3 stats">
             <i class="fa fa-check" aria-hidden="true"></i>
             <div class="counting" data-count="3">0</div>
             <h5>Projets</h5>
           </div>
-
           <div class="col-lg-3 stats">
             <i class="fa fa-coffee" aria-hidden="true"></i>
             <div class="counting" data-count="999">0</div>
@@ -40,8 +41,11 @@
           </div>
         </div>
       </div>
-  </section>
+    </section>
+
+    <%= render"shared/services" %>
+    <%= render"shared/tools" %>
     <%= render"shared/card" %>
     <%= render"shared/formcontact" %>
-</main>
+  </main>
 <%= render"shared/footer" %>

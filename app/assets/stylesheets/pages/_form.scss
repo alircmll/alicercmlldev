@@ -12,17 +12,24 @@ $form-bg         : #fff;
   padding-bottom: 22px;
   .input-block{
     background-color: rgba(white, .8);
-    width: 100%;
+    width: 70%;
     height: 60px;
     padding: 25px;
     position: relative;
     margin-bottom: 20px;
     transition: all 300ms ease-out;
     &:hover{
-       background-color: rgba($canard, 0.4);
-    }
+       // background-color: rgba($canard, 0.4);
+       width: 100%;
+       transition: all 300ms ease-out;
+     }
     &.focus{
       background-color: rgba(white, .8);
+      width: 100%;
+      transition: all 300ms ease-out;
+      &.visited{
+        width: 100%;
+      }
     }
     &.textarea{
       height: auto;
@@ -44,6 +51,8 @@ $form-bg         : #fff;
       line-height: 10px;
       font-family: "Roboto", serif, sans-serif;
     }
+
+
     .form-control{
       background-color: transparent;
       padding: 0;
@@ -52,7 +61,8 @@ $form-bg         : #fff;
       position: relative;
       z-index: 2;
       font-size: 18px;
-      color: $secondary-color;
+      // color: $secondary-color;
+
     }
     .form-control:focus{
       label{
@@ -60,23 +70,37 @@ $form-bg         : #fff;
       }
     }
   }
-  .square-button{
-    background-color: rgba(white, .8);
-    color: darken($primary-color, 10%);
-    font-size: 26px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    padding: 0 60px;
-    height: 60px;
-    border: none;
-    width: 100%;
-    &:hover,
-    &:focus{
-      background-color: white;
-    }
-  }
+  // .square-button{
+  //   background-color: rgba(white, .8);
+  //   color: darken($primary-color, 10%);
+  //   font-size: 26px;
+  //   text-transform: uppercase;
+  //   font-weight: 700;
+  //   text-align: center;
+  //   padding: 0 60px;
+  //   height: 60px;
+  //   border: none;
+  //   width: 100%;
+  //   &:hover,
+  //   &:focus{
+  //     background-color: white;
+  //   }
+  // }
 }
+// input.form-control{
+//   background: red !important;
+// }
+// input:-internal-autofill-selected {
+//         background-color: red !important;
+//         background-image: none !important;
+//         // color: -internal-light-dark-color(black, white) !important;
+//       }
+//       input:-internal-autofill-previewed {
+//         background-color: red !important;
+//         background-image: none !important;
+//         color: -internal-light-dark-color(black, white) !important;
+//       }
+
 
 #title-contact{
   i{
@@ -102,7 +126,8 @@ $form-bg         : #fff;
 //////////////////////////
 
 .contact-wrap{
-  // padding: 15px;
+  // display: flex;
+
 }
 
 .location-info{

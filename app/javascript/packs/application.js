@@ -8,6 +8,7 @@ import { formAjax } from "../plugins/formAjax.js";
 import { button } from "../plugins/download.js";
 import { navbar } from "../plugins/navbar.js";
 import { card } from "../plugins/card.js";
+import { acceuil } from "../plugins/acceuil.js";
 
 
 // call functions
@@ -18,6 +19,7 @@ animate();
 formAjax();
 navbar();
 card();
+acceuil();
 
 // progress
 // (function($){
