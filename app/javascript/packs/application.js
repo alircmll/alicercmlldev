@@ -9,6 +9,8 @@ import { button } from "../plugins/download.js";
 import { navbar } from "../plugins/navbar.js";
 import { card } from "../plugins/card.js";
 import { acceuil } from "../plugins/acceuil.js";
+import { preLoader } from "../plugins/preloader.js";
+// import { openNav, closeNav } from "plugins/collapse.js";
 
 
 // call functions
@@ -20,9 +22,9 @@ formAjax();
 navbar();
 card();
 acceuil();
+preLoader();
+// collapse();
+// $("#userMenuBtn").click(openNav);
+// $("#closeUserBtn").click(closeNav);
 
-// progress
-// (function($){
-//         new WOW().init();
-//     })(jQuery);
 
