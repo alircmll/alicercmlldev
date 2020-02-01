@@ -1,6 +1,6 @@
 function count() {
   $(window).scroll(function() {
-    if($(window).scrollTop() > 1700) {
+    if($(window).scrollTop() > 150) {
       $('.counting').each(function() {
         var $this = $(this),
             countTo = $this.attr('data-count');
@@ -11,7 +11,7 @@ function count() {
 
         {
 
-          duration: 3000,
+          duration: 2000,
           easing:'linear',
           step: function() {
             $this.text(Math.floor(this.countNum));
