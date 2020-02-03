@@ -1,5 +1,6 @@
 import "bootstrap";
 import $ from 'jquery';
+import Typed from 'typed.js';
 import { count } from "../plugins/count.js";
 import { timeLine } from "../plugins/timeline.js";
 import { skill } from "../plugins/skill.js";
@@ -11,6 +12,7 @@ import { navbar } from "../plugins/navbar.js";
 import { acceuil } from "../plugins/acceuil.js";
 import { preLoader } from "../plugins/preloader.js";
 // import { openNav, closeNav } from "plugins/collapse.js";
+import { type } from "../plugins/type.js";
 
 
 // call functions
@@ -26,5 +28,5 @@ preLoader();
 // collapse();
 // $("#userMenuBtn").click(openNav);
 // $("#closeUserBtn").click(closeNav);
-
+type();
 
