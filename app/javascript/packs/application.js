@@ -13,6 +13,7 @@ import { acceuil } from "../plugins/acceuil.js";
 import { preLoader } from "../plugins/preloader.js";
 // import { openNav, closeNav } from "plugins/collapse.js";
 import { type } from "../plugins/type.js";
+import WOW from 'wow.js';
 
 
 // call functions
@@ -30,3 +31,4 @@ preLoader();
 // $("#closeUserBtn").click(closeNav);
 type();
 
+new WOW().init();
