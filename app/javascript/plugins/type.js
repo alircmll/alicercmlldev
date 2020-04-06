@@ -1,6 +1,6 @@
 function type() {
   var options = {
-    strings: ["Je suis <br> Développeur Web Fullstack <br> en Freelance.", "N'hésitez pas à me contacter <br> pour plus de renseignements <br> conseils ou autre."],
+    strings: ["Développeuse Web Fullstack <br> en Freelance.", "N'hésitez pas à me contacter <br> pour plus de renseignements <br> conseils ou autre."],
     typeSpeed: 70,
     startDelay: 1000,
     backSpeed: 50,
