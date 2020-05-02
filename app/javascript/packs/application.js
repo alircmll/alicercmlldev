@@ -11,7 +11,7 @@ import { navbar } from "../plugins/navbar.js";
 // import { card } from "../plugins/card.js";
 import { acceuil } from "../plugins/acceuil.js";
 import { preLoader } from "../plugins/preloader.js";
-// import { openNav, closeNav } from "plugins/collapse.js";
+ // import { openNav, closeNav } from "plugins/collapse.js";
 import { type } from "../plugins/type.js";
 import WOW from 'wow.js';
 
@@ -27,8 +27,8 @@ navbar();
 acceuil();
 preLoader();
 // collapse();
-// $("#userMenuBtn").click(openNav);
-// $("#closeUserBtn").click(closeNav);
+ // $("#userMenuBtn").click(openNav);
+ // $("#closeUserBtn").click(closeNav);
 type();
 
 new WOW().init();

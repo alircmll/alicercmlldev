@@ -26,22 +26,28 @@
 
 
 .navbar-custom .navbar-brand {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #FFF;
+  // font-family: 'Montserrat', sans-serif;
+  // font-weight: bold;
+  // color: #FFF;
   margin-top: 0;
 
 }
 
 .navbar-brand {
-  float: left;
-  padding: 5px 50px;
-  font-size: 18px;
-  line-height: 20px;
+  // float: left;
+  // padding: 5px 50px;
+  // font-size: 18px;
+  // line-height: 20px;
+
 
   &:hover  {
     // color: #6f1f13 !important;
-    color: black !important;
+    // color: black !important;
+  }
+  .img-brand{
+    width: 40%;
+    margin-top: 8%;
+
   }
 }
 
@@ -423,6 +429,14 @@ $pix-size: 6px; // <---- Definir la taille du menu
 @media only screen and (max-width: 766px) {
   #dotsMenu {
     display: block;
+  }
+  .img-brand{
+    width: 40%;
+    margin-top: 0;
+
+  }
+  .solid-nav{
+    display: none;
   }
 }
 

@@ -1,10 +1,11 @@
 <nav id="navMenu" class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-custom navbar-fixed-top">
 
-  <%#= link_to "#tab-es6", class: "navbar-brand" do %>
-     <!-- <span id="name">AliceRcmll</span> -->
-  <%# end %>
           <div class="navbar-header">
-            <a class="navbar-brand" href="#tab-es6">AliceRcmll</a>
+            <%= link_to "#tab-es6", class: "navbar-brand" do %>
+               <!-- <span id="name">AliceRcmll</span> -->
+               <%= image_tag('rcmll.png', class:"img-brand") %>
+            <% end %>
+            <!-- <a class="navbar-brand" href="#tab-es6"></a> -->
           </div>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -20,7 +21,7 @@
 
 
     <%# MENU DOTS %>
-    <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
+    <!-- <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
       <div class="pix"></div>
       <div class="pix"></div>
       <div class="pix"></div>
@@ -30,13 +31,13 @@
       <div class="pix"></div>
       <div class="pix"></div>
       <div class="pix"></div>
-    </a>
+    </a> -->
 </nav>
 <%# NAVBAR TOP MENU END %>
 
 
 <%# MODAL MENU START %>
-<div class="modal fade" id="modalNavigation" role="dialog"  aria-hidden="true">
+<!-- <div class="modal fade" id="modalNavigation" role="dialog"  aria-hidden="true">
   <%# BUTTON CLOSE %>
   <a id="dotsMenuClose" class="btn menu active" data-target="#modalNavigation" data-toggle="modal" aria-label="Close" class="close" data-dismiss="modal">
     <div class="pix"></div>
@@ -52,19 +53,19 @@
   <%# MODAL %>
   <div class="modal-dialog">
     <div class="modal-content" role="document">
-      <ul id="menuModal" class="list-group text-center">
+      <ul id="menuModal" class="list-group text-center"> -->
         <%# LIST %>
 
-            <a class="nav-link list-group-item menu-item" href="#tab-es6">Accueil</a>
+           <!--  <a class="nav-link list-group-item menu-item" href="#tab-es6">Accueil</a>
             <a class="nav-link list-group-item menu-item" href="#tab-profil">À propos</a>
             <a class="nav-link list-group-item menu-item" href="#tab-services">Services</a>
-            <a class="nav-link list-group-item menu-item" href="#tab-react">Outils</a>
+            <a class="nav-link list-group-item menu-item" href="#tab-react">Outils</a> -->
             <!-- <a class="nav-link list-group-item menu-item" href="#tab-folio">Portfolio</a> -->
-            <a class="nav-link list-group-item menu-item" href="#tab-other">Contact</a>
+            <!-- <a class="nav-link list-group-item menu-item" href="#tab-other">Contact</a> -->
 
 
 
-        <%# MENU PROFIL / LOG OUT START %>
+       <!--  <%# MENU PROFIL / LOG OUT START %>
         <hr>
         <li class="footer-menu list-inline ">
           <div class="d-flex justify-content-center">
@@ -76,6 +77,6 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->
 
 
