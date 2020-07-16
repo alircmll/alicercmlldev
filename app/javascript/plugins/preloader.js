@@ -1,13 +1,21 @@
 // PreLoader
 function preLoader(){
-  jQuery.noConflict();
-  (function($) {
-    $(window).on('load', function() { // makes sure the whole site is loaded
-      $('.loader').fadeOut(); // will first fade out the loading animation
-      $('.container-loader').delay(200).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    });
-  })(jQuery);
+  $(document).ready(function() {
 
+    // Fakes the loading setting a timeout
+      setTimeout(function() {
+          $('body').addClass('loaded');
+      }, 3500);
+      if (!sessionStorage.isVisited) {
+      sessionStorage.isVisited = 'true'
+      $("#preloader").delay(2500).fadeOut("slow")
+      $(".loader").delay(2500).fadeOut("slow")
+    } else {
+      $("#preloader").hide()
+      $(".loader").hide()
+  }
+
+  });
 };
 
 export{ preLoader };

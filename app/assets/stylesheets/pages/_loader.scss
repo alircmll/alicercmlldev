@@ -1,79 +1,205 @@
-.container-loader {
-  background-color: #ededed;
-  position: absolute;
+// .container-loader {
+//   background-color: #ededed;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   z-index: 1001;
+//   height: 100%;
+// }
+
+// .loader {
+//   width: 200px;
+//   height: 200px;
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   margin: -100px 0 0 -100px;
+//   max-width: 15rem;
+//   stroke-linecap: round;
+// }
+
+// circle {
+//   fill: none;
+//   stroke-width: 3.5;
+//   animation-name: preloader;
+//   animation-duration: 3s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: ease-in-out;
+//   transform-origin: 170px 170px;
+//   will-change: transform;
+
+//   &:nth-of-type(1) {
+//     stroke-dasharray: 550px;
+//   }
+
+//   &:nth-of-type(2) {
+//     stroke-dasharray: 500px;
+//   }
+
+//   &:nth-of-type(3) {
+//     stroke-dasharray: 450px;
+//   }
+
+//   &:nth-of-type(4) {
+//     stroke-dasharray: 300px;
+//   }
+
+//   @for $i from 1 through 4 {
+//     &:nth-of-type(#{$i}) {
+//       animation-delay: -#{$i * 0.15}s;
+//     }
+//   }
+// }
+
+// @keyframes preloader {
+//   50% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// @media (max-width: 960px) {
+//   /* For a screen < 960px, this CSS will be read */
+//   .container-loader  {
+//   display: none;
+//   }
+// }
+// @media (max-width: 720px) {
+//   /* For a screen < 720px, this CSS will be read */
+//   .container-loader  {
+//   display: none;
+//   }
+// }
+// @media (max-width: 540px) {
+//   /* For a screen < 540px, this CSS will be read */
+//   .container-loader  {
+//   display: none;
+//   }
+// }
+
+#preloader {
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1001;
+  width: 100vw;
   height: 100%;
+  background-color: #ededed;
+  z-index: 1000;
+
+
+
+  @media (min-width: 769px) {
+
+  }
+
+  @media (max-width: 768px) {
+
+  }
+
+  @media (min-width: 769px) {
+
+  }
+
+  @media (max-width: 768px) {
+
+  }
 }
 
-.loader {
-  width: 200px;
-  height: 200px;
-  position: absolute;
+
+#loader {
+  display: block;
+  position: relative;
   left: 50%;
-  top: 50%;
-  margin: -100px 0 0 -100px;
-  max-width: 15rem;
-  stroke-linecap: round;
+  top: 38%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #235a64;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
 }
 
-circle {
-  fill: none;
-  stroke-width: 3.5;
-  animation-name: preloader;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transform-origin: 170px 170px;
-  will-change: transform;
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #fff132;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
 
-  &:nth-of-type(1) {
-    stroke-dasharray: 550px;
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #235a64 ;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+
+  img.logo-preloader {
+    -webkit-animation: spin 0s;
+    animation: spin 0s;
   }
+}
 
-  &:nth-of-type(2) {
-    stroke-dasharray: 500px;
-  }
-
-  &:nth-of-type(3) {
-    stroke-dasharray: 450px;
-  }
-
-  &:nth-of-type(4) {
-    stroke-dasharray: 300px;
-  }
-
-  @for $i from 1 through 4 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: -#{$i * 0.15}s;
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes preloader {
-  50% {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container-loader  {
-  display: none;
-  }
+.loaded #loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container-loader  {
-  display: none;
-  }
+
+.loaded #loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container-loader  {
-  display: none;
-  }
+
+.loaded #preloader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  z-index: 0;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.3s 1s ease-out;
 }

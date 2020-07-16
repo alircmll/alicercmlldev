@@ -1,14 +1,3 @@
-<body id="homeTop" class="index" data-pinterest-extension-installed="cr1.3.4">
-  <div class="container-loader">
-
-    <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
-         <circle cx="170" cy="170" r="160" stroke="#fff132"/>
-         <circle cx="170" cy="170" r="135" stroke="#235a64"/>
-         <circle cx="170" cy="170" r="110" stroke="#fff132"/>
-         <circle cx="170" cy="170" r="85" stroke="#235a64"/>
-    </svg>
-
-</div>
   <div class="scroll-up bounce">
     <a href="#homeTop">
       <i class="fas fa-angle-double-up"></i>
@@ -17,35 +6,27 @@
   <%= render"shared/navbar" %>
 
                       <!-- ancienne section acceuil -->
-
-  <section class="et-hero-tabs" class="et-slide" id="tab-es6" id="section1">
-    <h1 class="title-name">Alice Roy-Camille</h1>
-    <div class="text-body intro-lead-in"><span class="typed"></span></div>
-    <a href="#tab-react">
-      <div class="scroll-down"></div>
-    </a>
-  </section>
-
-
+<%= render"shared/header" %>
   <!-- Main -->
   <main class="et-main">
     <%= render"shared/profil" %>
+
     <section class="et-slide" id="tab-flexbox" id= "section-profil" id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
       <div class="container">
         <div class="row container-profil">
           <div class="col-lg-3 stats">
             <i class="fa fa-code" aria-hidden="true"></i>
-            <div class="counting" data-count="40000">0</div>
+            <div class="counting" data-count="418270">0</div>
             <h5>Lignes de code</h5>
           </div>
           <div class="col-lg-3 stats">
             <i class="fa fa-check" aria-hidden="true"></i>
-            <div class="counting" data-count="3">0</div>
+            <div class="counting" data-count="5">0</div>
             <h5>Projets</h5>
           </div>
           <div class="col-lg-3 stats">
             <i class="fa fa-coffee" aria-hidden="true"></i>
-            <div class="counting" data-count="999">0</div>
+            <div class="counting" data-count="1539">0</div>
             <h5>Tasses de café</h5>
           </div>
         </div>
@@ -53,8 +34,13 @@
     </section>
 
     <%= render"shared/services" %>
+
     <%= render"shared/tools" %>
+
     <%#= render"shared/card" %>
+
     <%= render"shared/formcontact" %>
+
   </main>
+
 <%= render"shared/footer" %>
