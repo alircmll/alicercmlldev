@@ -2,7 +2,6 @@
   max-width: 960px;
 }
 
-
 .amg-badge {
   padding: 22px 5%;
 }
@@ -86,9 +85,9 @@
 }
 
 /* SKILL 1 */
+
 .skill1{
   width: 100%;
-
 }
 .skill-bar span{
   position: absolute;
@@ -99,15 +98,16 @@
   font-weight: 500;
   border-radius:2px;
 }
+
 .skill-bar {
   position: relative;
-
 }
 
 .skill1 .skill-count1 {
   right: 0;
 }
 /* SKILL 2 */
+
 .skill2{
   width: 95%;
 }
@@ -116,9 +116,11 @@
   right: 0;
 }
 /* SKILL 3 */
+
 .skill3{
   width: 55%;
 }
+
 .skill3 .skill-count3 {
   right: 0;
 }
