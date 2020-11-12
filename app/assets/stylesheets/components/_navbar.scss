@@ -68,14 +68,14 @@
     a {
       margin: 0 0 0 30px;
       font-size: 12px;
-      color: white;
+      color: black;
       font-family: 'Roboto', sans-serif;
       text-decoration: none;
       position: relative;
 
       &:hover{
         // color: #6f1f13;
-        color: black;
+        color: #85edc4;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
       }
 
@@ -137,9 +137,11 @@ a.effect-underline:hover:after {
 
 
   &.solid-nav {
-    background-color: #f5f5f5;
+    // background-color: #f5f5f5;
+    background-color: white;
+    box-shadow: 0px 0px 10px #CBCBCD;
     // color: black;
-    border-bottom: 1px solid #91999d;
+    // border-bottom: 1px solid #91999d;
     padding: 5px 50px;
     transition:
       background-color 0.5s ease,

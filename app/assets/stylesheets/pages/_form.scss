@@ -8,10 +8,18 @@ $form-bg         : #fff;
 
 #tab-contact{
   padding-top: 10vh;
+  box-shadow: 0px 0px 21px grey;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
   background-repeat :no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.2)), image_url('lampe.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,1.2)), image_url('blue.jpg');
+  background-attachment: fixed;
   color: white;
+}
+
+#title-contact{
+  text-transform: uppercase;
 }
 
 .contact-form{
@@ -53,7 +61,7 @@ $form-bg         : #fff;
       margin: 0;
       font-weight: 300;
       z-index: 1;
-      color: $secondary-color;
+      color: grey;
       font-size: 16px;
       line-height: 10px;
       font-family: "Roboto", serif, sans-serif;

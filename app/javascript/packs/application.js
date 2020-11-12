@@ -14,6 +14,7 @@ import { preLoader } from "../plugins/preloader.js";
  // import { openNav, closeNav } from "plugins/collapse.js";
 import { type } from "../plugins/type.js";
 import WOW from 'wow.js';
+import { underline } from "../plugins/underline.js";
 
 
 // call functions
@@ -30,5 +31,8 @@ preLoader();
  // $("#userMenuBtn").click(openNav);
  // $("#closeUserBtn").click(closeNav);
 type();
+underline();
 
 new WOW().init();
+
+

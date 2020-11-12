@@ -1,16 +1,16 @@
 input[type=submit]{
   margin-left: 0.5em;
   height: 2.5em;
-  padding: 0.2em 1em 0.2em 2.25em;
-  font-size: 1.2em;
-  font-weight: bold;
+  padding: 14.5px 43px 30.5px 53px;
+  font-size: 12px;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  color: #696666;
+  color: white;
   background: url(https://i.imgur.com/Th606mh.png) no-repeat scroll 0.5em -0.3em transparent;
   background-size: 27px 102px;
   border-radius: 2em;
-  border: 0.15em solid #008080;
+  border: 0.15em solid white;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   outline: none;
@@ -18,8 +18,8 @@ input[type=submit]{
 }
 input[type="submit"]:hover {
   color: #fff;
-  background-color: #008080;
-  border-color: #008080;
+  background-color: #235A64;
+  border-color: #235A64;
   background-position: 0.45em bottom;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
