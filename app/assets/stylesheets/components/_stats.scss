@@ -3,31 +3,24 @@
 
 /*/ start count stats /*/
 
-section#counter-stats {
+section#section-profil {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-}
-
-.stats {
-  text-align: center;
-  font-size: 35px;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.stats .fa {
-  color: #008080;
-  font-size: 60px;
-}
-
-#section-profil{
   padding-top: 10vh;
   padding-bottom: 10vh;
-  // // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),image_url('laptod.jpg');
-  // background-attachment: fixed;
-  // background-repeat :no-repeat;
-  // background-size: cover;
   background-color: black;
   color: white;
+
+  .stats {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .fa, .fas {
+    color: $canard;
+    font-size: 60px;
+  }
 }
