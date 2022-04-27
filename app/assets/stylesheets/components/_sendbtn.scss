@@ -10,7 +10,7 @@ input[type=submit]{
   background: url(https://i.imgur.com/Th606mh.png) no-repeat scroll 0.5em -0.3em transparent;
   background-size: 27px 102px;
   border-radius: 2em;
-  border: 0.15em solid $canard;
+  border: 0.15em solid grey;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   outline: none;
@@ -18,8 +18,8 @@ input[type=submit]{
 }
 input[type="submit"]:hover {
   color: #fff;
-  background-color: $canard;
-  border-color: $canard;
+  background-color: rgba(6,61,13, 0.6);
+  border-color: rgba(6,61,13, 0.6);
   background-position: 0.45em bottom;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;

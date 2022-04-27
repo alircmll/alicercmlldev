@@ -11,8 +11,8 @@ function preLoader(){
       $("#preloader").delay(2500).fadeOut("slow")
       $(".loader").delay(2500).fadeOut("slow")
     } else {
-      $("#preloader").hide()
-      $(".loader").hide()
+      // $("#preloader").hide()
+      // $(".loader").hide()
   }
 
   });

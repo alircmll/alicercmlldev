@@ -12,10 +12,11 @@ import { navbar } from "../plugins/navbar.js";
 import { acceuil } from "../plugins/acceuil.js";
 import { preLoader } from "../plugins/preloader.js";
  // import { openNav, closeNav } from "plugins/collapse.js";
-import { type } from "../plugins/type.js";
+// import { type } from "../plugins/type.js";
 import WOW from 'wow.js';
+import AOS from 'aos';
 
-
+import 'aos/dist/aos.css';
 // call functions
 count();
 timeLine();
@@ -29,6 +30,11 @@ preLoader();
 // collapse();
  // $("#userMenuBtn").click(openNav);
  // $("#closeUserBtn").click(closeNav);
-type();
+// type();
 
 new WOW().init();
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    // startEvent: 'turbolinks:load' // if you are using turbolinks
+  });
+});

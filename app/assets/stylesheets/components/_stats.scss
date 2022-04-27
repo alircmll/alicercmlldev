@@ -9,8 +9,8 @@ section#section-profil {
   margin-top: 100px;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: grey;
 
   .stats {
     text-align: center;
@@ -20,7 +20,7 @@ section#section-profil {
   }
 
   .fa, .fas {
-    color: $canard;
+    color: #4f8d74;
     font-size: 60px;
   }
 }

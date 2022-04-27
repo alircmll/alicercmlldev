@@ -15,6 +15,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  a{
+    color: #063d0d;
+    text-decoration: none;
+    background-color: transparent;
+    &:hover{
+      color: #0f6713;
+      text-decoration: underline;
+      background-color: transparent;
+    }
+  }
+  p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
 }
 
 .profil-title{
