@@ -12,6 +12,11 @@ $font-color: #485B61;
   padding-top: 10vh;
   padding-bottom: 10vh;
   text-align: center;
+  // background-color: #0365B5;
+  h1{
+    font-size: 4rem;
+    color: white;
+  }
 }
 
 .arrow{
@@ -33,7 +38,7 @@ $font-color: #485B61;
 
 .timeline ul li.in-view .timeline-contentt h3{
   padding: 10px;
-  background: #4f8d74;
+  background: #F7567C;
   color: #fff;
   border-radius: 3px;
   font-size: 1.4em;
@@ -75,7 +80,7 @@ $font-color: #485B61;
   width: 1.5px;
   margin: 0 auto;
   padding-top: 50px;
-  background: $canard;
+  background: grey;
 }
 
 .timeline ul li::after {
@@ -122,7 +127,7 @@ $font-color: #485B61;
 .timeline ul li:nth-child(odd) div::before {
   left: -16px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent $canard transparent transparent;
+  border-color: transparent #FF9398 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -132,7 +137,7 @@ $font-color: #485B61;
 .timeline ul li:nth-child(even) div::before {
   right: -16px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent $canard;
+  border-color: transparent transparent transparent #FF9398;
 }
 
 time {
@@ -155,7 +160,7 @@ span{
 }
 
 .timeline ul li.in-view::after {
-  background: $canard;
+  background: #FF9398;
 }
 
 .timeline ul li div {

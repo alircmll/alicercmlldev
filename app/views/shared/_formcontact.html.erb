@@ -1,32 +1,39 @@
 <section class="et-slide" id="tab-contact">
-  <h1 id="title-contact">Contactez-moi</h1>
+  <!-- <h1 id="title-contact">Contactez-moi</h1> -->
   <section class="contact-wrap">
-    <form id="my-form" class="contact-form" action="https://formspree.io/xwkveaqe" method="POST">
-      <div class="row">
-        <div class="col-6">
-          <div class="input-block">
-            <label>Nom/Prénom*</label>
-            <input type="text" name="last_name" class="form-control">
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="input-block">
-            <label>Email*</label>
-            <input type="text" name="_replyto" class="form-control">
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-5 col-talk">
+        <h1>LET'S <br>TALK</h1>
+        <p>À l'écoute de vos besoins.</p>
       </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="input-block textarea">
-            <label for="">Message*</label>
-            <textarea rows="6" type="text" name="message" class="form-control"></textarea>
+      <div class="col-6">
+        <form id="my-form" class="contact-form" action="https://formspree.io/xwkveaqe" method="POST">
+          <div class="row">
+            <div class="col-6">
+              <div class="input-block">
+                <label>Nom/Prénom*</label>
+                <input type="text" name="last_name" class="form-control">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="input-block">
+                <label>Email*</label>
+                <input type="text" name="_replyto" class="form-control">
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="input-block textarea">
+                <label for="">Message*</label>
+                <textarea rows="6" type="text" name="message" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+          <input value="" id="my-form-button" type="submit" />
+          <p id="my-form-status"></p>
+        </form>
       </div>
-      <input value="" id="my-form-button" type="submit" />
-      <!-- <button id="my-form-button">Submit</button> -->
-      <p id="my-form-status"></p>
-    </form>
+    </div>
   </section>
 </section>

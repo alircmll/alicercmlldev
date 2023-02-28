@@ -1,7 +1,22 @@
+#tab-services{
+  // background-color: 0369be;
+  p{
+    color: black;
+    font-family: "Nuito", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  h4{
+    color: #0369be;
+  }
+}
+
 // title
 .services-header{
   margin-bottom: 45px;
   margin-top: 45px;
+  color: #0369be;
+  opacity: 0.5;
 }
 
 #services .f-iconbox {
@@ -17,7 +32,6 @@
 
 .f-iconbox {
   z-index: 5;
-  font-size: 14px;
   line-height: 24px;
   position: relative;
   padding-left: 96px;
@@ -57,8 +71,8 @@
 }
 
 .f-iconbox .icon {
-  color: #65b193;
-  border-color: #65b193;
+  color: #F7567C;
+  border-color: #F7567C;
 }
 
 .f-iconbox.right .icon {
